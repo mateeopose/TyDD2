@@ -1,0 +1,727 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+
+HEADER
+{
+	VERSION = 1;
+	TIME_UNIT = ns;
+	DATA_OFFSET = 0.0;
+	DATA_DURATION = 1000.0;
+	SIMULATION_TIME = 0.0;
+	GRID_PHASE = 0.0;
+	GRID_PERIOD = 0.0;
+	GRID_DUTY_CYCLE = 50;
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|A")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|B")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|Cin")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|Cout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|Sum")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|sampler")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|gnd")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|vcc")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|unknown")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|devclrn")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|devpor")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|devoe")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|Cout~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|Sum~output_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|A~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|B~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|Cin~input_o")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|Cout~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("Sumador_Completo_vlg_vec_tst|i1|Sum~0_combout")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|A")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 200.0;
+		LEVEL 1 FOR 200.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|B")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|Cin")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 350.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|Cout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.945;
+		LEVEL 0 FOR 50.607;
+		LEVEL 1 FOR 50.541;
+		LEVEL 0 FOR 49.041;
+		LEVEL 1 FOR 200.959;
+		LEVEL 0 FOR 49.459;
+		LEVEL 1 FOR 100.541;
+		LEVEL 0 FOR 49.041;
+		LEVEL 1 FOR 50.959;
+		LEVEL 0 FOR 199.671;
+		LEVEL 1 FOR 49.619;
+		LEVEL 0 FOR 50.169;
+		LEVEL 1 FOR 92.448;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|Sum")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.492;
+		LEVEL 0 FOR 49.931;
+		LEVEL 1 FOR 150.962;
+		LEVEL 0 FOR 99.495;
+		LEVEL 1 FOR 150.236;
+		LEVEL 0 FOR 50.376;
+		LEVEL 1 FOR 149.17;
+		LEVEL 0 FOR 50.218;
+		LEVEL 1 FOR 50.236;
+		LEVEL 0 FOR 99.667;
+		LEVEL 1 FOR 49.984;
+		LEVEL 0 FOR 49.656;
+		LEVEL 1 FOR 42.577;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|sampler")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|gnd")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|vcc")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|unknown")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|devclrn")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|devpor")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|devoe")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|Cout~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 6.945;
+		LEVEL 0 FOR 50.607;
+		LEVEL 1 FOR 50.541;
+		LEVEL 0 FOR 49.041;
+		LEVEL 1 FOR 200.959;
+		LEVEL 0 FOR 49.459;
+		LEVEL 1 FOR 100.541;
+		LEVEL 0 FOR 49.041;
+		LEVEL 1 FOR 50.959;
+		LEVEL 0 FOR 199.671;
+		LEVEL 1 FOR 49.619;
+		LEVEL 0 FOR 50.169;
+		LEVEL 1 FOR 92.448;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|Sum~output_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 7.492;
+		LEVEL 0 FOR 49.931;
+		LEVEL 1 FOR 150.962;
+		LEVEL 0 FOR 99.495;
+		LEVEL 1 FOR 150.236;
+		LEVEL 0 FOR 50.376;
+		LEVEL 1 FOR 149.17;
+		LEVEL 0 FOR 50.218;
+		LEVEL 1 FOR 50.236;
+		LEVEL 0 FOR 99.667;
+		LEVEL 1 FOR 49.984;
+		LEVEL 0 FOR 49.656;
+		LEVEL 1 FOR 42.577;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|A~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.786;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 100.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 100.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 199.893;
+		LEVEL 1 FOR 199.214;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|B~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.766;
+		LEVEL 1 FOR 200.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 100.107;
+		LEVEL 0 FOR 99.893;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 149.893;
+		LEVEL 1 FOR 99.234;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|Cin~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 50.806;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 350.107;
+		LEVEL 0 FOR 49.893;
+		LEVEL 1 FOR 100.107;
+		LEVEL 0 FOR 149.893;
+		LEVEL 1 FOR 50.107;
+		LEVEL 0 FOR 99.893;
+		LEVEL 1 FOR 49.194;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|Cout~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.063;
+		LEVEL 0 FOR 50.502;
+		LEVEL 1 FOR 50.646;
+		LEVEL 0 FOR 48.936;
+		LEVEL 1 FOR 201.064;
+		LEVEL 0 FOR 49.354;
+		LEVEL 1 FOR 100.646;
+		LEVEL 0 FOR 48.936;
+		LEVEL 1 FOR 51.064;
+		LEVEL 0 FOR 199.566;
+		LEVEL 1 FOR 49.724;
+		LEVEL 0 FOR 50.064;
+		LEVEL 1 FOR 95.435;
+	}
+}
+
+TRANSITION_LIST("Sumador_Completo_vlg_vec_tst|i1|Sum~0_combout")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 4.332;
+		LEVEL 0 FOR 49.816;
+		LEVEL 1 FOR 50.354;
+		LEVEL 0 FOR 0.715;
+		LEVEL 1 FOR 48.925;
+		LEVEL 0 FOR 0.665;
+		LEVEL 1 FOR 50.418;
+		LEVEL 0 FOR 99.38;
+		LEVEL 1 FOR 150.351;
+		LEVEL 0 FOR 50.261;
+		LEVEL 1 FOR 48.925;
+		LEVEL 0 FOR 0.665;
+		LEVEL 1 FOR 99.695;
+		LEVEL 0 FOR 50.103;
+		LEVEL 1 FOR 50.351;
+		LEVEL 0 FOR 49.192;
+		LEVEL 1 FOR 0.667;
+		LEVEL 0 FOR 49.693;
+		LEVEL 1 FOR 50.099;
+		LEVEL 0 FOR 49.541;
+		LEVEL 1 FOR 45.852;
+	}
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|A";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 0;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|B";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 1;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|Cin";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 2;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|Cout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 3;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|Sum";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 4;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|sampler";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 5;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|gnd";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 6;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|vcc";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 7;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|unknown";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|devclrn";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|devpor";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 10;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|devoe";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 11;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|Cout~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|Sum~output_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|A~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 14;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|B~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 15;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|Cin~input_o";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 16;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|Cout~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 17;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "Sumador_Completo_vlg_vec_tst|i1|Sum~0_combout";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 18;
+	TREE_LEVEL = 0;
+}
+;

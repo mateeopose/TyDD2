@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte A\simulation\qsim
+vSumador_Completo
+Z1 I_7hNE7NQl]IUeMKRP=:;=3
+Z2 VV1EQ6<kYFaB[5k38A<]@H2
+Z3 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte A\simulation\qsim
+Z4 w1761179116
+Z5 8Sumador_Completo.vo
+Z6 FSumador_Completo.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Sumador_Completo.vo|
+Z9 o-work work -O0
+Z10 n@sumador_@completo
+!i10b 1
+Z11 !s100 BA9zPz1>1i2=Nm7bajczJ1
+!s85 0
+Z12 !s108 1761179117.419000
+Z13 !s107 Sumador_Completo.vo|
+!s101 -O0
+vSumador_Completo_vlg_check_tst
+!i10b 1
+Z14 !s100 kf:[W]1iL75WIQe[h_E<z0
+Z15 IHo65]z:3aVjKRXH=;?;GT1
+Z16 V]E5S[i_RoNDbOXU@eaof90
+R3
+R4
+Z17 8Sumador_Completo.vt
+Z18 FSumador_Completo.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z19 !s108 1761179117.472000
+Z20 !s107 Sumador_Completo.vt|
+Z21 !s90 -work|work|Sumador_Completo.vt|
+!s101 -O0
+R9
+Z22 n@sumador_@completo_vlg_check_tst
+vSumador_Completo_vlg_sample_tst
+!i10b 1
+Z23 !s100 `Z;MM^;8l783kP?Q3KE5>3
+Z24 I69j45P^U`1JfJHd6ibzUD2
+Z25 V>iJ6FKSc90MS[ch7G<eRe1
+R3
+R4
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z26 n@sumador_@completo_vlg_sample_tst
+vSumador_Completo_vlg_vec_tst
+!i10b 1
+Z27 !s100 =SMhUo5DNB^VzNd6Dek;l2
+Z28 I]X`MY?Y;7c4_Zo[2NGi^E3
+Z29 VSnCUE^iHVR@SjZV0<4SlA3
+R3
+R4
+R17
+R18
+Z30 L0 183
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+Z31 n@sumador_@completo_vlg_vec_tst
