@@ -1,14 +1,14 @@
-|Sumador_Completo
-A => Sum.IN1
-A => Sig3.IN0
-A => Sig4.IN0
-B => Sig1.IN0
-B => Sig2.IN0
-B => Sig3.IN1
-Cin => Sig1.IN1
-Cin => Sig2.IN1
-Cin => Sig4.IN1
-Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
-Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+|Block1
+Sum <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+A => inst.IN0
+B => inst5.IN0
+B => inst2.IN1
+B => inst.IN1
+Cin => inst5.IN1
+Cin => inst1.IN1
+Cin => inst2.IN0
+Cout <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 

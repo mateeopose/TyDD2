@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte B\simulation\qsim
+vmulti2sinsigno
+Z1 I4VK?oX?ULmQEd9]m1CP1o0
+Z2 VIg_h8C4V;zkj2=R=k9RXH3
+Z3 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte B\simulation\qsim
+Z4 w1761192678
+Z5 8multi2sinsigno.vo
+Z6 Fmulti2sinsigno.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 422o]j^n0GdW;bgZV5n_R0
+!s85 0
+Z10 !s108 1761192679.243000
+Z11 !s107 multi2sinsigno.vo|
+Z12 !s90 -work|work|multi2sinsigno.vo|
+!s101 -O0
+vmulti2sinsigno_vlg_check_tst
+!i10b 1
+!s100 egC_<S22QEK[;9??LB;Z53
+IEhHRVGDl=X2@2lPH1EQKQ1
+VW>7nfz8]RBjhmTM`F]id=3
+R3
+R4
+Z13 8multi2sinsigno.vt
+Z14 Fmulti2sinsigno.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z15 !s108 1761192679.292000
+Z16 !s107 multi2sinsigno.vt|
+Z17 !s90 -work|work|multi2sinsigno.vt|
+!s101 -O0
+R8
+vmulti2sinsigno_vlg_sample_tst
+!i10b 1
+!s100 kDPIEEhPf1YWmkPSQ=2;51
+I18n>kCaGfH1A7U^?OFb4Z1
+V2`DmAD_F<6`P:@5Y7dVl10
+R3
+R4
+R13
+R14
+L0 29
+R7
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+R8
+vmulti2sinsigno_vlg_vec_tst
+!i10b 1
+!s100 1iS?nhU`nNjE^e@Y1B39N3
+I1VbheJ4_og0XXz62H54oV2
+V<;PfJ7OVeH:>]0BbZ;_]W2
+R3
+R4
+R13
+R14
+L0 241
+R7
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+R8

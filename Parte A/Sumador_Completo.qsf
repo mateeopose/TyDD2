@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C120F780C7
-set_global_assignment -name TOP_LEVEL_ENTITY Block1
+set_global_assignment -name TOP_LEVEL_ENTITY Sumador_Completo
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:54:22  OCTOBER 20, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
