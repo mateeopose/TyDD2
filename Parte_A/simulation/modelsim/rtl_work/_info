@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte A\simulation\modelsim
+Esumador_completo
+Z1 w1761177485
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte A\simulation\modelsim
+Z5 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/Sumador_Completo.vhd
+Z6 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/Sumador_Completo.vhd
+l0
+L4
+VEol1HXHJFNgdGaeS9D[@R1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1761242352.154000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/Sumador_Completo.vhd|
+Z10 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/Sumador_Completo.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 NMR<5z?WRCSZzTV3JbJVj0
+!i10b 1
+Acomportamiento
+R2
+R3
+DEx4 work 16 sumador_completo 0 22 Eol1HXHJFNgdGaeS9D[@R1
+l13
+L11
+VkX6=?01<O2m=odFTIAfQ[3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 P]kZEoZ`zVhoaP`mhf7Nf2
+!i10b 1
+Etb_sumador_completo
+Z13 w1761187337
+R2
+R3
+R4
+Z14 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/TBSumador_completo.vhd
+Z15 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/TBSumador_completo.vhd
+l0
+L4
+V0V>hO@31:j_O:99h4U0iF1
+!s100 [R`M[`f2DSjBVbJ<gYKWW0
+R7
+31
+!i10b 1
+Z16 !s108 1761242352.242000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/TBSumador_completo.vhd|
+Z18 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba 1/Parte A/TBSumador_completo.vhd|
+R11
+R12
+Acomportamiento
+R2
+R3
+DEx4 work 19 tb_sumador_completo 0 22 0V>hO@31:j_O:99h4U0iF1
+l20
+L7
+V1eO;b8eBV0M`m<gQoT;?l3
+!s100 Q;j8NSUU;RO1?T1m[HmJg2
+R7
+31
+!i10b 1
+R16
+R17
+R18
+R11
+R12

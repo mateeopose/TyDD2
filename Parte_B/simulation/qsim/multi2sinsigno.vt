@@ -1,0 +1,362 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/23/2025 13:48:25"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    multi2sinsigno
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module multi2sinsigno_vlg_sample_tst(
+	a0,
+	a1,
+	b0,
+	b1,
+	Cin,
+	sampler_tx
+);
+input  a0;
+input  a1;
+input  b0;
+input  b1;
+input  Cin;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(a0 or a1 or b0 or b1 or Cin)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module multi2sinsigno_vlg_check_tst (
+	Out0,
+	Out1,
+	Out2,
+	Out3,
+	sampler_rx
+);
+input  Out0;
+input  Out1;
+input  Out2;
+input  Out3;
+input sampler_rx;
+
+reg  Out0_expected;
+reg  Out1_expected;
+reg  Out2_expected;
+reg  Out3_expected;
+
+reg  Out0_prev;
+reg  Out1_prev;
+reg  Out2_prev;
+reg  Out3_prev;
+
+reg  Out0_expected_prev;
+reg  Out1_expected_prev;
+reg  Out2_expected_prev;
+reg  Out3_expected_prev;
+
+reg  last_Out0_exp;
+reg  last_Out1_exp;
+reg  last_Out2_exp;
+reg  last_Out3_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:4] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 4'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	Out0_prev = Out0;
+	Out1_prev = Out1;
+	Out2_prev = Out2;
+	Out3_prev = Out3;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	Out0_expected_prev = Out0_expected;
+	Out1_expected_prev = Out1_expected;
+	Out2_expected_prev = Out2_expected;
+	Out3_expected_prev = Out3_expected;
+end
+
+
+
+// expected Out0
+initial
+begin
+	Out0_expected = 1'bX;
+end 
+
+// expected Out1
+initial
+begin
+	Out1_expected = 1'bX;
+end 
+
+// expected Out2
+initial
+begin
+	Out2_expected = 1'bX;
+end 
+
+// expected Out3
+initial
+begin
+	Out3_expected = 1'bX;
+end 
+// generate trigger
+always @(Out0_expected or Out0 or Out1_expected or Out1 or Out2_expected or Out2 or Out3_expected or Out3)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected Out0 = %b | expected Out1 = %b | expected Out2 = %b | expected Out3 = %b | ",Out0_expected_prev,Out1_expected_prev,Out2_expected_prev,Out3_expected_prev);
+	$display("| real Out0 = %b | real Out1 = %b | real Out2 = %b | real Out3 = %b | ",Out0_prev,Out1_prev,Out2_prev,Out3_prev);
+`endif
+	if (
+		( Out0_expected_prev !== 1'bx ) && ( Out0_prev !== Out0_expected_prev )
+		&& ((Out0_expected_prev !== last_Out0_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out0_expected_prev);
+		$display ("     Real value = %b", Out0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Out0_exp = Out0_expected_prev;
+	end
+	if (
+		( Out1_expected_prev !== 1'bx ) && ( Out1_prev !== Out1_expected_prev )
+		&& ((Out1_expected_prev !== last_Out1_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out1_expected_prev);
+		$display ("     Real value = %b", Out1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Out1_exp = Out1_expected_prev;
+	end
+	if (
+		( Out2_expected_prev !== 1'bx ) && ( Out2_prev !== Out2_expected_prev )
+		&& ((Out2_expected_prev !== last_Out2_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out2_expected_prev);
+		$display ("     Real value = %b", Out2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_Out2_exp = Out2_expected_prev;
+	end
+	if (
+		( Out3_expected_prev !== 1'bx ) && ( Out3_prev !== Out3_expected_prev )
+		&& ((Out3_expected_prev !== last_Out3_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out3_expected_prev);
+		$display ("     Real value = %b", Out3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_Out3_exp = Out3_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module multi2sinsigno_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg a0;
+reg a1;
+reg b0;
+reg b1;
+reg Cin;
+// wires                                               
+wire Out0;
+wire Out1;
+wire Out2;
+wire Out3;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+multi2sinsigno i1 (
+// port map - connection between master ports and signals/registers   
+	.a0(a0),
+	.a1(a1),
+	.b0(b0),
+	.b1(b1),
+	.Cin(Cin),
+	.Out0(Out0),
+	.Out1(Out1),
+	.Out2(Out2),
+	.Out3(Out3)
+);
+
+// a0
+initial
+begin
+	a0 = 1'b0;
+	a0 = #50000 1'b1;
+	a0 = #50000 1'b0;
+	a0 = #100000 1'b1;
+	a0 = #50000 1'b0;
+	a0 = #50000 1'b1;
+	a0 = #50000 1'b0;
+	a0 = #50000 1'b1;
+	a0 = #100000 1'b0;
+	a0 = #250000 1'b1;
+	a0 = #150000 1'b0;
+end 
+
+// a1
+initial
+begin
+	a1 = 1'b1;
+	a1 = #50000 1'b0;
+	a1 = #100000 1'b1;
+	a1 = #250000 1'b0;
+	a1 = #100000 1'b1;
+	a1 = #50000 1'b0;
+	a1 = #50000 1'b1;
+	a1 = #150000 1'b0;
+	a1 = #50000 1'b1;
+	a1 = #150000 1'b0;
+end 
+
+// b0
+initial
+begin
+	b0 = 1'b1;
+	b0 = #50000 1'b0;
+	b0 = #50000 1'b1;
+	b0 = #100000 1'b0;
+	b0 = #50000 1'b1;
+	b0 = #100000 1'b0;
+	b0 = #50000 1'b1;
+	b0 = #50000 1'b0;
+	b0 = #50000 1'b1;
+	b0 = #100000 1'b0;
+	b0 = #100000 1'b1;
+	b0 = #50000 1'b0;
+	b0 = #50000 1'b1;
+	b0 = #50000 1'b0;
+	b0 = #50000 1'b1;
+	b0 = #50000 1'b0;
+end 
+
+// b1
+initial
+begin
+	b1 = 1'b0;
+	b1 = #50000 1'b1;
+	b1 = #50000 1'b0;
+	b1 = #50000 1'b1;
+	b1 = #50000 1'b0;
+	b1 = #50000 1'b1;
+	b1 = #50000 1'b0;
+	b1 = #50000 1'b1;
+	b1 = #250000 1'b0;
+	b1 = #100000 1'b1;
+	b1 = #50000 1'b0;
+end 
+
+// Cin
+initial
+begin
+	Cin = 1'b0;
+end 
+
+multi2sinsigno_vlg_sample_tst tb_sample (
+	.a0(a0),
+	.a1(a1),
+	.b0(b0),
+	.b1(b1),
+	.Cin(Cin),
+	.sampler_tx(sampler)
+);
+
+multi2sinsigno_vlg_check_tst tb_out(
+	.Out0(Out0),
+	.Out1(Out1),
+	.Out2(Out2),
+	.Out3(Out3),
+	.sampler_rx(sampler)
+);
+endmodule
+
