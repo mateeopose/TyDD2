@@ -232,7 +232,7 @@ SIGNAL("multi2sinsigno_vlg_vec_tst|i1|Out2~output_o")
 	PARENT = "";
 }
 
-SIGNAL("multi2sinsigno_vlg_vec_tst|i1|b0~input_o")
+SIGNAL("multi2sinsigno_vlg_vec_tst|i1|a0~input_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -242,7 +242,7 @@ SIGNAL("multi2sinsigno_vlg_vec_tst|i1|b0~input_o")
 	PARENT = "";
 }
 
-SIGNAL("multi2sinsigno_vlg_vec_tst|i1|a0~input_o")
+SIGNAL("multi2sinsigno_vlg_vec_tst|i1|b0~input_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -282,7 +282,7 @@ SIGNAL("multi2sinsigno_vlg_vec_tst|i1|inst4~combout")
 	PARENT = "";
 }
 
-SIGNAL("multi2sinsigno_vlg_vec_tst|i1|b1~input_o")
+SIGNAL("multi2sinsigno_vlg_vec_tst|i1|Cin~input_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -292,7 +292,7 @@ SIGNAL("multi2sinsigno_vlg_vec_tst|i1|b1~input_o")
 	PARENT = "";
 }
 
-SIGNAL("multi2sinsigno_vlg_vec_tst|i1|Cin~input_o")
+SIGNAL("multi2sinsigno_vlg_vec_tst|i1|b1~input_o")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -367,17 +367,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|a0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -386,16 +376,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|a1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -404,22 +385,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|b0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -428,17 +394,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|b1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -456,13 +412,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|Out0")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -471,20 +421,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|Out1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -493,17 +430,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|Out2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -512,7 +439,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|Out3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -521,25 +448,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|sampler")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -602,13 +511,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|Out0~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -617,20 +520,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|Out1~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -639,7 +529,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|Out3~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -648,41 +538,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|Out2~output_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 250.0;
-	}
-}
-
-TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|b0~input_o")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -691,17 +547,16 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|a0~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
+TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|b0~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -710,13 +565,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst2~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 350.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -725,16 +574,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|a1~input_o")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -743,39 +583,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst4~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-	}
-}
-
-TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|b1~input_o")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 250.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -788,25 +596,21 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|Cin~input_o")
 	}
 }
 
+TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|b1~input_o")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 1000.0;
+	}
+}
+
 TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst|Sum~combout")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -815,11 +619,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst5~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 300.0;
-		LEVEL 1 FOR 100.0;
-		LEVEL 0 FOR 500.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -828,17 +628,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst3~combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -847,7 +637,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst1|Cout~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -856,7 +646,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst|Cout~0_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -865,17 +655,7 @@ TRANSITION_LIST("multi2sinsigno_vlg_vec_tst|i1|inst1|Sum~2_combout")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 50.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 100.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 50.0;
-		LEVEL 0 FOR 250.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1061,7 +841,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|b0~input_o";
+	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|a0~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 20;
@@ -1070,7 +850,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|a0~input_o";
+	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|b0~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 21;
@@ -1106,7 +886,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|b1~input_o";
+	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|Cin~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 25;
@@ -1115,7 +895,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|Cin~input_o";
+	CHANNEL = "multi2sinsigno_vlg_vec_tst|i1|b1~input_o";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 26;

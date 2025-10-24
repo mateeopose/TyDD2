@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte B\simulation\qsim
 vmulti2sinsigno
-Z1 !s100 422o]j^n0GdW;bgZV5n_R0
-Z2 I4VK?oX?ULmQEd9]m1CP1o0
+Z1 !s100 8QdS2kojlZ:AFDb1U<MUL0
+Z2 I=X2inXdPQYIdRDjHZR5ee0
 Z3 VIg_h8C4V;zkj2=R=k9RXH3
-Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba 1\Parte B\simulation\qsim
-Z5 w1761238106
+Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_B\simulation\qsim
+Z5 w1761245195
 Z6 8multi2sinsigno.vo
 Z7 Fmulti2sinsigno.vo
 L0 31
@@ -19,7 +19,7 @@ Z9 !s90 -work|work|multi2sinsigno.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1761238107.586000
+Z11 !s108 1761274692.341000
 Z12 !s107 multi2sinsigno.vo|
 !s101 -O0
 vmulti2sinsigno_vlg_check_tst
@@ -28,7 +28,7 @@ Z13 !s100 egC_<S22QEK[;9??LB;Z53
 Z14 IEhHRVGDl=X2@2lPH1EQKQ1
 Z15 VW>7nfz8]RBjhmTM`F]id=3
 R4
-Z16 w1761238105
+Z16 w1761274691
 Z17 8multi2sinsigno.vt
 Z18 Fmulti2sinsigno.vt
 L0 65
@@ -36,7 +36,7 @@ R8
 r1
 !s85 0
 31
-Z19 !s108 1761238107.737000
+Z19 !s108 1761274692.398000
 Z20 !s107 multi2sinsigno.vt|
 Z21 !s90 -work|work|multi2sinsigno.vt|
 !s101 -O0
@@ -62,8 +62,8 @@ R21
 R10
 vmulti2sinsigno_vlg_vec_tst
 !i10b 1
-!s100 :5CA8e@[;B8YFDX[UQ;_P2
-Ia[icZ_8YD01XOLNRm4N>O2
+!s100 oaeI0nBVQgGbl1iEkODcI0
+IkaD=j[zQcZKgYBL?]gaVK0
 Z25 V<;PfJ7OVeH:>]0BbZ;_]W2
 R4
 R16
