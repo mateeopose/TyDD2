@@ -14,7 +14,7 @@
 
 -- PROGRAM		"Quartus II 64-Bit"
 -- VERSION		"Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
--- CREATED		"Sat Oct 25 11:40:30 2025"
+-- CREATED		"Sat Oct 25 18:06:35 2025"
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all; 
@@ -51,7 +51,6 @@ COMPONENT sumador_completo
 	);
 END COMPONENT;
 
-SIGNAL	gdfx_temp0 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
 SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
@@ -77,69 +76,85 @@ BEGIN
 
 
 
-PROCESS(gdfx_temp0,gdfx_temp0,PRN)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (gdfx_temp0 = '0') THEN
+IF (CLRN = '0') THEN
 	DFF_inst <= '0';
 ELSIF (PRN = '0') THEN
 	DFF_inst <= '1';
-ELSIF (RISING_EDGE(gdfx_temp0)) THEN
+ELSIF (RISING_EDGE(CLK)) THEN
 	DFF_inst <= a0;
 END IF;
 END PROCESS;
 
 
-PROCESS(gdfx_temp0,gdfx_temp0,PRN)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (gdfx_temp0 = '0') THEN
+IF (CLRN = '0') THEN
 	DFF_inst10 <= '0';
 ELSIF (PRN = '0') THEN
 	DFF_inst10 <= '1';
-ELSIF (RISING_EDGE(gdfx_temp0)) THEN
+ELSIF (RISING_EDGE(CLK)) THEN
 	DFF_inst10 <= b1;
 END IF;
 END PROCESS;
 
 
-PROCESS(gdfx_temp0,gdfx_temp0,PRN)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (gdfx_temp0 = '0') THEN
+IF (CLRN = '0') THEN
 	DFF_inst11 <= '0';
 ELSIF (PRN = '0') THEN
 	DFF_inst11 <= '1';
-ELSIF (RISING_EDGE(gdfx_temp0)) THEN
+ELSIF (RISING_EDGE(CLK)) THEN
 	DFF_inst11 <= a1;
 END IF;
 END PROCESS;
 
 
-PROCESS(gdfx_temp0)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (RISING_EDGE(gdfx_temp0)) THEN
+IF (CLRN = '0') THEN
+	Out0 <= '0';
+ELSIF (PRN = '0') THEN
+	Out0 <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
 	Out0 <= SYNTHESIZED_WIRE_0;
 END IF;
 END PROCESS;
 
 
-PROCESS(gdfx_temp0)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (RISING_EDGE(gdfx_temp0)) THEN
+IF (CLRN = '0') THEN
+	Out1 <= '0';
+ELSIF (PRN = '0') THEN
+	Out1 <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
 	Out1 <= SYNTHESIZED_WIRE_1;
 END IF;
 END PROCESS;
 
 
-PROCESS(gdfx_temp0)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (RISING_EDGE(gdfx_temp0)) THEN
+IF (CLRN = '0') THEN
+	Out2 <= '0';
+ELSIF (PRN = '0') THEN
+	Out2 <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
 	Out2 <= SYNTHESIZED_WIRE_2;
 END IF;
 END PROCESS;
 
 
-PROCESS(gdfx_temp0)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (RISING_EDGE(gdfx_temp0)) THEN
+IF (CLRN = '0') THEN
+	Out3 <= '0';
+ELSIF (PRN = '0') THEN
+	Out3 <= '1';
+ELSIF (RISING_EDGE(CLK)) THEN
 	Out3 <= SYNTHESIZED_WIRE_3;
 END IF;
 END PROCESS;
@@ -159,7 +174,6 @@ PORT MAP(A => SYNTHESIZED_WIRE_4,
          Cin => '0',
          Cout => open,
          Sum => SYNTHESIZED_WIRE_9);
-
 
 
 SYNTHESIZED_WIRE_8 <= SYNTHESIZED_WIRE_6 AND b1;
@@ -208,18 +222,16 @@ PORT MAP(A => SYNTHESIZED_WIRE_17,
 		 Sum => SYNTHESIZED_WIRE_6);
 
 
-PROCESS(gdfx_temp0,gdfx_temp0,PRN)
+PROCESS(CLK,CLRN,PRN)
 BEGIN
-IF (gdfx_temp0 = '0') THEN
+IF (CLRN = '0') THEN
 	SYNTHESIZED_WIRE_20 <= '0';
 ELSIF (PRN = '0') THEN
 	SYNTHESIZED_WIRE_20 <= '1';
-ELSIF (RISING_EDGE(gdfx_temp0)) THEN
+ELSIF (RISING_EDGE(CLK)) THEN
 	SYNTHESIZED_WIRE_20 <= b0;
 END IF;
 END PROCESS;
 
-gdfx_temp0 <= CLK;
-gdfx_temp0 <= CLRN;
 
 END bdf_type;

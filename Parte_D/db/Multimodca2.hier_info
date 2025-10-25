@@ -1,0 +1,177 @@
+|Multimodca2
+Out0_signo <= multi2consigno:inst2.Out0
+b0 => multi2consigno:inst2.b0
+b0 => multi2sinsigno:inst.b0
+a0 => multi2consigno:inst2.a0
+a0 => multi2sinsigno:inst.a0
+Cin => multi2consigno:inst2.Cin
+Cin => multi2sinsigno:inst.Cin
+b1 => multi2consigno:inst2.b1
+b1 => multi2sinsigno:inst.b1
+a1 => multi2consigno:inst2.a1
+a1 => multi2sinsigno:inst.a1
+PRN => multi2consigno:inst2.PRN
+CLK => multi2consigno:inst2.CLK
+CLRN => multi2consigno:inst2.CLRN
+ALTO => multi2consigno:inst2.ALTO
+Out1_signo <= multi2consigno:inst2.Out1
+Out3_signo <= multi2consigno:inst2.Out3
+Out2_signo <= multi2consigno:inst2.Out2
+Out1_mod <= multi2sinsigno:inst.Out1
+Out0_mod <= multi2sinsigno:inst.Out0
+Out2_mod <= multi2sinsigno:inst.Out2
+Out3_mod <= multi2sinsigno:inst.Out3
+
+
+|Multimodca2|multi2consigno:inst2
+b0 => SYNTHESIZED_WIRE_20.DATAIN
+a0 => DFF_inst.DATAIN
+a0 => sumador_completo:b2v_inst8.A
+Cin => sumador_completo:b2v_inst2.Cin
+Cin => sumador_completo:b2v_inst8.Cin
+b1 => SYNTHESIZED_WIRE_8.IN1
+b1 => SYNTHESIZED_WIRE_12.IN0
+b1 => DFF_inst10.DATAIN
+a1 => DFF_inst11.DATAIN
+a1 => SYNTHESIZED_WIRE_12.IN1
+a1 => sumador_completo:b2v_inst18.B
+PRN => Out0.IN0
+CLK => SYNTHESIZED_WIRE_20.CLK
+CLK => Out3~reg0.CLK
+CLK => Out2~reg0.CLK
+CLK => Out1~reg0.CLK
+CLK => Out0~reg0.CLK
+CLK => DFF_inst11.CLK
+CLK => DFF_inst10.CLK
+CLK => DFF_inst.CLK
+CLRN => Out0.IN1
+CLRN => Out0~reg0.ACLR
+CLRN => Out1~reg0.ACLR
+CLRN => Out3~reg0.ACLR
+CLRN => Out2~reg0.ACLR
+CLRN => DFF_inst.ACLR
+CLRN => DFF_inst10.ACLR
+CLRN => DFF_inst11.ACLR
+CLRN => SYNTHESIZED_WIRE_20.ACLR
+ALTO => sumador_completo:b2v_inst8.B
+Out0 <= Out0~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out1 <= Out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out3 <= Out3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Out2 <= Out2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst18
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst2
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst22
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst3
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst8
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2sinsigno:inst
+b0 => Out0.IN0
+b0 => SYNTHESIZED_WIRE_1.IN0
+a0 => Out0.IN1
+a0 => SYNTHESIZED_WIRE_0.IN0
+Cin => sumador_completo:b2v_inst.Cin
+Cin => sumador_completo:b2v_inst1.Cin
+b1 => SYNTHESIZED_WIRE_2.IN0
+b1 => SYNTHESIZED_WIRE_0.IN1
+a1 => SYNTHESIZED_WIRE_2.IN1
+a1 => SYNTHESIZED_WIRE_1.IN1
+Out0 <= Out0.DB_MAX_OUTPUT_PORT_TYPE
+Out1 <= sumador_completo:b2v_inst.Sum
+Out3 <= sumador_completo:b2v_inst1.Cout
+Out2 <= sumador_completo:b2v_inst1.Sum
+
+
+|Multimodca2|multi2sinsigno:inst|Sumador_Completo:b2v_inst
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Multimodca2|multi2sinsigno:inst|Sumador_Completo:b2v_inst1
+A => Sum.IN1
+A => Sig3.IN0
+A => Sig4.IN0
+B => Sig1.IN0
+B => Sig2.IN0
+B => Sig3.IN1
+Cin => Sig1.IN1
+Cin => Sig2.IN1
+Cin => Sig4.IN1
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+
+
