@@ -155,11 +155,8 @@ SYNTHESIZED_WIRE_18 <= NOT(a1);
 
 b2v_inst18 : sumador_completo
 PORT MAP(A => SYNTHESIZED_WIRE_4,
-         B => SYNTHESIZED_WIRE_18,
-         Cin => '0',
-         Cout => open,
-         Sum => SYNTHESIZED_WIRE_9);
-
+		 B => SYNTHESIZED_WIRE_18,
+		 Sum => SYNTHESIZED_WIRE_9);
 
 
 SYNTHESIZED_WIRE_8 <= SYNTHESIZED_WIRE_6 AND b1;
