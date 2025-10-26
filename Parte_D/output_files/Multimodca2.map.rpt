@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Multimodca2
-Sat Oct 25 18:17:39 2025
+Sun Oct 26 16:26:04 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 25 18:17:39 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun Oct 26 16:26:04 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Multimodca2                                     ;
 ; Top-level Entity Name              ; Multimodca2                                     ;
@@ -265,7 +265,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Oct 25 18:17:38 2025
+    Info: Processing started: Sun Oct 26 16:26:01 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multimodca2 -c Multimodca2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /users/usuario/documents/facultad/tydd2/programasvhdl/prueba_1/parte_a/sumador_completo.vhd
@@ -300,9 +300,9 @@ Info (21057): Implemented 52 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 35 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Sat Oct 25 18:17:39 2025
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4644 megabytes
+    Info: Processing ended: Sun Oct 26 16:26:04 2025
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

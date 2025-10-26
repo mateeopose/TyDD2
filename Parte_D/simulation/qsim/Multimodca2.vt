@@ -1,0 +1,539 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/26/2025 16:31:20"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    Multimodca2
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Multimodca2_vlg_sample_tst(
+	a0,
+	a1,
+	ALTO,
+	b0,
+	b1,
+	Cin,
+	CLK,
+	CLRN,
+	PRN,
+	sampler_tx
+);
+input  a0;
+input  a1;
+input  ALTO;
+input  b0;
+input  b1;
+input  Cin;
+input  CLK;
+input  CLRN;
+input  PRN;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(a0 or a1 or ALTO or b0 or b1 or Cin or CLK or CLRN or PRN)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module Multimodca2_vlg_check_tst (
+	Out0_mod,
+	Out0_signo,
+	Out1_mod,
+	Out1_signo,
+	Out2_mod,
+	Out2_signo,
+	Out3_mod,
+	Out3_signo,
+	sampler_rx
+);
+input  Out0_mod;
+input  Out0_signo;
+input  Out1_mod;
+input  Out1_signo;
+input  Out2_mod;
+input  Out2_signo;
+input  Out3_mod;
+input  Out3_signo;
+input sampler_rx;
+
+reg  Out0_mod_expected;
+reg  Out0_signo_expected;
+reg  Out1_mod_expected;
+reg  Out1_signo_expected;
+reg  Out2_mod_expected;
+reg  Out2_signo_expected;
+reg  Out3_mod_expected;
+reg  Out3_signo_expected;
+
+reg  Out0_mod_prev;
+reg  Out0_signo_prev;
+reg  Out1_mod_prev;
+reg  Out1_signo_prev;
+reg  Out2_mod_prev;
+reg  Out2_signo_prev;
+reg  Out3_mod_prev;
+reg  Out3_signo_prev;
+
+reg  Out0_mod_expected_prev;
+reg  Out0_signo_expected_prev;
+reg  Out1_mod_expected_prev;
+reg  Out1_signo_expected_prev;
+reg  Out2_mod_expected_prev;
+reg  Out2_signo_expected_prev;
+reg  Out3_mod_expected_prev;
+reg  Out3_signo_expected_prev;
+
+reg  last_Out0_mod_exp;
+reg  last_Out0_signo_exp;
+reg  last_Out1_mod_exp;
+reg  last_Out1_signo_exp;
+reg  last_Out2_mod_exp;
+reg  last_Out2_signo_exp;
+reg  last_Out3_mod_exp;
+reg  last_Out3_signo_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:8] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 8'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	Out0_mod_prev = Out0_mod;
+	Out0_signo_prev = Out0_signo;
+	Out1_mod_prev = Out1_mod;
+	Out1_signo_prev = Out1_signo;
+	Out2_mod_prev = Out2_mod;
+	Out2_signo_prev = Out2_signo;
+	Out3_mod_prev = Out3_mod;
+	Out3_signo_prev = Out3_signo;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	Out0_mod_expected_prev = Out0_mod_expected;
+	Out0_signo_expected_prev = Out0_signo_expected;
+	Out1_mod_expected_prev = Out1_mod_expected;
+	Out1_signo_expected_prev = Out1_signo_expected;
+	Out2_mod_expected_prev = Out2_mod_expected;
+	Out2_signo_expected_prev = Out2_signo_expected;
+	Out3_mod_expected_prev = Out3_mod_expected;
+	Out3_signo_expected_prev = Out3_signo_expected;
+end
+
+
+
+// expected Out0_mod
+initial
+begin
+	Out0_mod_expected = 1'bX;
+end 
+
+// expected Out0_signo
+initial
+begin
+	Out0_signo_expected = 1'bX;
+end 
+
+// expected Out1_mod
+initial
+begin
+	Out1_mod_expected = 1'bX;
+end 
+
+// expected Out1_signo
+initial
+begin
+	Out1_signo_expected = 1'bX;
+end 
+
+// expected Out2_mod
+initial
+begin
+	Out2_mod_expected = 1'bX;
+end 
+
+// expected Out2_signo
+initial
+begin
+	Out2_signo_expected = 1'bX;
+end 
+
+// expected Out3_mod
+initial
+begin
+	Out3_mod_expected = 1'bX;
+end 
+
+// expected Out3_signo
+initial
+begin
+	Out3_signo_expected = 1'bX;
+end 
+// generate trigger
+always @(Out0_mod_expected or Out0_mod or Out0_signo_expected or Out0_signo or Out1_mod_expected or Out1_mod or Out1_signo_expected or Out1_signo or Out2_mod_expected or Out2_mod or Out2_signo_expected or Out2_signo or Out3_mod_expected or Out3_mod or Out3_signo_expected or Out3_signo)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected Out0_mod = %b | expected Out0_signo = %b | expected Out1_mod = %b | expected Out1_signo = %b | expected Out2_mod = %b | expected Out2_signo = %b | expected Out3_mod = %b | expected Out3_signo = %b | ",Out0_mod_expected_prev,Out0_signo_expected_prev,Out1_mod_expected_prev,Out1_signo_expected_prev,Out2_mod_expected_prev,Out2_signo_expected_prev,Out3_mod_expected_prev,Out3_signo_expected_prev);
+	$display("| real Out0_mod = %b | real Out0_signo = %b | real Out1_mod = %b | real Out1_signo = %b | real Out2_mod = %b | real Out2_signo = %b | real Out3_mod = %b | real Out3_signo = %b | ",Out0_mod_prev,Out0_signo_prev,Out1_mod_prev,Out1_signo_prev,Out2_mod_prev,Out2_signo_prev,Out3_mod_prev,Out3_signo_prev);
+`endif
+	if (
+		( Out0_mod_expected_prev !== 1'bx ) && ( Out0_mod_prev !== Out0_mod_expected_prev )
+		&& ((Out0_mod_expected_prev !== last_Out0_mod_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out0_mod :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out0_mod_expected_prev);
+		$display ("     Real value = %b", Out0_mod_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Out0_mod_exp = Out0_mod_expected_prev;
+	end
+	if (
+		( Out0_signo_expected_prev !== 1'bx ) && ( Out0_signo_prev !== Out0_signo_expected_prev )
+		&& ((Out0_signo_expected_prev !== last_Out0_signo_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out0_signo :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out0_signo_expected_prev);
+		$display ("     Real value = %b", Out0_signo_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Out0_signo_exp = Out0_signo_expected_prev;
+	end
+	if (
+		( Out1_mod_expected_prev !== 1'bx ) && ( Out1_mod_prev !== Out1_mod_expected_prev )
+		&& ((Out1_mod_expected_prev !== last_Out1_mod_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out1_mod :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out1_mod_expected_prev);
+		$display ("     Real value = %b", Out1_mod_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_Out1_mod_exp = Out1_mod_expected_prev;
+	end
+	if (
+		( Out1_signo_expected_prev !== 1'bx ) && ( Out1_signo_prev !== Out1_signo_expected_prev )
+		&& ((Out1_signo_expected_prev !== last_Out1_signo_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out1_signo :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out1_signo_expected_prev);
+		$display ("     Real value = %b", Out1_signo_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_Out1_signo_exp = Out1_signo_expected_prev;
+	end
+	if (
+		( Out2_mod_expected_prev !== 1'bx ) && ( Out2_mod_prev !== Out2_mod_expected_prev )
+		&& ((Out2_mod_expected_prev !== last_Out2_mod_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out2_mod :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out2_mod_expected_prev);
+		$display ("     Real value = %b", Out2_mod_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_Out2_mod_exp = Out2_mod_expected_prev;
+	end
+	if (
+		( Out2_signo_expected_prev !== 1'bx ) && ( Out2_signo_prev !== Out2_signo_expected_prev )
+		&& ((Out2_signo_expected_prev !== last_Out2_signo_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out2_signo :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out2_signo_expected_prev);
+		$display ("     Real value = %b", Out2_signo_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_Out2_signo_exp = Out2_signo_expected_prev;
+	end
+	if (
+		( Out3_mod_expected_prev !== 1'bx ) && ( Out3_mod_prev !== Out3_mod_expected_prev )
+		&& ((Out3_mod_expected_prev !== last_Out3_mod_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out3_mod :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out3_mod_expected_prev);
+		$display ("     Real value = %b", Out3_mod_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_Out3_mod_exp = Out3_mod_expected_prev;
+	end
+	if (
+		( Out3_signo_expected_prev !== 1'bx ) && ( Out3_signo_prev !== Out3_signo_expected_prev )
+		&& ((Out3_signo_expected_prev !== last_Out3_signo_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Out3_signo :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Out3_signo_expected_prev);
+		$display ("     Real value = %b", Out3_signo_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_Out3_signo_exp = Out3_signo_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module Multimodca2_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg a0;
+reg a1;
+reg ALTO;
+reg b0;
+reg b1;
+reg Cin;
+reg CLK;
+reg CLRN;
+reg PRN;
+// wires                                               
+wire Out0_mod;
+wire Out0_signo;
+wire Out1_mod;
+wire Out1_signo;
+wire Out2_mod;
+wire Out2_signo;
+wire Out3_mod;
+wire Out3_signo;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+Multimodca2 i1 (
+// port map - connection between master ports and signals/registers   
+	.a0(a0),
+	.a1(a1),
+	.ALTO(ALTO),
+	.b0(b0),
+	.b1(b1),
+	.Cin(Cin),
+	.CLK(CLK),
+	.CLRN(CLRN),
+	.Out0_mod(Out0_mod),
+	.Out0_signo(Out0_signo),
+	.Out1_mod(Out1_mod),
+	.Out1_signo(Out1_signo),
+	.Out2_mod(Out2_mod),
+	.Out2_signo(Out2_signo),
+	.Out3_mod(Out3_mod),
+	.Out3_signo(Out3_signo),
+	.PRN(PRN)
+);
+
+// a0
+initial
+begin
+	a0 = 1'b0;
+	a0 = #35000 1'b1;
+	a0 = #35000 1'b0;
+	a0 = #210000 1'b1;
+	a0 = #70000 1'b0;
+	a0 = #70000 1'b1;
+	a0 = #35000 1'b0;
+	a0 = #105000 1'b1;
+	a0 = #35000 1'b0;
+	a0 = #70000 1'b1;
+	a0 = #70000 1'b0;
+	a0 = #105000 1'b1;
+end 
+
+// a1
+initial
+begin
+	a1 = 1'b0;
+	a1 = #70000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #70000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #105000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #70000 1'b0;
+	a1 = #70000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #70000 1'b1;
+	a1 = #70000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #35000 1'b0;
+end 
+
+// ALTO
+initial
+begin
+	ALTO = 1'b1;
+end 
+
+// b0
+initial
+begin
+	b0 = 1'b0;
+	b0 = #140000 1'b1;
+	b0 = #35000 1'b0;
+	b0 = #70000 1'b1;
+	b0 = #70000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #105000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #70000 1'b0;
+	b0 = #175000 1'b1;
+	b0 = #70000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #105000 1'b0;
+end 
+
+// b1
+initial
+begin
+	b1 = 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #140000 1'b1;
+	b1 = #105000 1'b0;
+	b1 = #70000 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #70000 1'b1;
+	b1 = #35000 1'b0;
+	b1 = #70000 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #70000 1'b1;
+	b1 = #105000 1'b0;
+	b1 = #35000 1'b1;
+end 
+
+// Cin
+initial
+begin
+	Cin = 1'b0;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #25000 1'b1;
+	#25000;
+end 
+
+// CLRN
+initial
+begin
+	CLRN = 1'b1;
+end 
+
+// PRN
+initial
+begin
+	PRN = 1'b1;
+end 
+
+Multimodca2_vlg_sample_tst tb_sample (
+	.a0(a0),
+	.a1(a1),
+	.ALTO(ALTO),
+	.b0(b0),
+	.b1(b1),
+	.Cin(Cin),
+	.CLK(CLK),
+	.CLRN(CLRN),
+	.PRN(PRN),
+	.sampler_tx(sampler)
+);
+
+Multimodca2_vlg_check_tst tb_out(
+	.Out0_mod(Out0_mod),
+	.Out0_signo(Out0_signo),
+	.Out1_mod(Out1_mod),
+	.Out1_signo(Out1_signo),
+	.Out2_mod(Out2_mod),
+	.Out2_signo(Out2_signo),
+	.Out3_mod(Out3_mod),
+	.Out3_signo(Out3_signo),
+	.sampler_rx(sampler)
+);
+endmodule
+
