@@ -1,0 +1,13 @@
+|maqestados
+reset => fstate~3.DATAIN
+clock => fstate~1.DATAIN
+x => reg_fstate.E.DATAB
+x => reg_fstate.D.DATAB
+x => reg_fstate.B.DATAB
+x => reg_fstate.G.DATAB
+z0 <= z0.DB_MAX_OUTPUT_PORT_TYPE
+z1 <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+z2 <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+z3 <= z3.DB_MAX_OUTPUT_PORT_TYPE
+
+
