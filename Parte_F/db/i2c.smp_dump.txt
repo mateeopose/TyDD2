@@ -1,0 +1,8 @@
+
+State Machine - |i2c|fstate
+Name fstate.guarda_dato fstate.ACK fstate.RW fstate.guarda_direc fstate.Idle 
+fstate.Idle 0 0 0 0 0 
+fstate.guarda_direc 0 0 0 1 1 
+fstate.RW 0 0 1 0 1 
+fstate.ACK 0 1 0 0 1 
+fstate.guarda_dato 1 0 0 0 1 
