@@ -4,56 +4,56 @@ K3
 cModel Technology
 Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_D\simulation\qsim
 vMultimodca2
-Z1 !s100 UnFDT00ehIc6V7S9MU_d:0
-Z2 I@noeziJJ1K7l[52_[a9^P0
-Z3 VIfiUm2QYUd_fQE0QjWW<l3
-Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_D\simulation\qsim
-Z5 w1761507081
-Z6 8Multimodca2.vo
-Z7 FMultimodca2.vo
+Z1 I4^PBKnG_H0z7;M;YJ=X821
+Z2 VhU93`88FKd3FPUkfF:HcW1
+Z3 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_D\simulation\qsim
+Z4 w1761613658
+Z5 8Multimodca2.vo
+Z6 FMultimodca2.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|Multimodca2.vo|
-Z10 o-work work -O0
-Z11 n@multimodca2
+Z8 !s90 -work|work|Multimodca2.vo|
+Z9 o-work work -O0
+Z10 n@multimodca2
 !i10b 1
+Z11 !s100 <44>EKaJQ`C49bl`5h45[0
 !s85 0
-Z12 !s108 1761507082.041000
+Z12 !s108 1761613658.969000
 Z13 !s107 Multimodca2.vo|
 !s101 -O0
 vMultimodca2_vlg_check_tst
 !i10b 1
-Z14 !s100 n]652:QgoXSS5[Z[@]62:2
-Z15 I37Vl0gTFBP0_3LS^@KK<I2
+Z14 !s100 I3gKgd6CYoHGEj[@[5U0d1
+Z15 I1ZBDkL<n[NGc;8Wl]=Me31
 Z16 V=hU6ck[aNd`Fl^oBDnaFQ0
-R4
-Z17 w1761507080
+R3
+Z17 w1761613657
 Z18 8Multimodca2.vt
 Z19 FMultimodca2.vt
-L0 73
-R8
+L0 71
+R7
 r1
 !s85 0
 31
-Z20 !s108 1761507082.107000
+Z20 !s108 1761613659.028000
 Z21 !s107 Multimodca2.vt|
 Z22 !s90 -work|work|Multimodca2.vt|
 !s101 -O0
-R10
+R9
 Z23 n@multimodca2_vlg_check_tst
 vMultimodca2_vlg_sample_tst
 !i10b 1
-Z24 !s100 B<5I2:>>mD]ffXo`9MK;V0
-Z25 I]k;Afm>k8@KSJzOA7;^a_2
-Z26 VWMZ`[hTgeQMSn<R0edN7z1
-R4
+Z24 !s100 Fd=OzBoSNoUkG7>@`7oZ?3
+Z25 I?LTD8;D[8RFelLm6]JjBz2
+Z26 VUcH@j5kG267LB>a<2dAiV2
+R3
 R17
 R18
 R19
 L0 29
-R8
+R7
 r1
 !s85 0
 31
@@ -61,19 +61,19 @@ R20
 R21
 R22
 !s101 -O0
-R10
+R9
 Z27 n@multimodca2_vlg_sample_tst
 vMultimodca2_vlg_vec_tst
 !i10b 1
-!s100 M^cWU1<SI9^G@Y5mI;Lca0
-IN`;<]=35F`^Ec;Q92oKVa0
-Z28 V0?98T1W01MjL3NmFYo5_V1
-R4
+Z28 !s100 CZllOTXILWoKOAR@0?]2B3
+Z29 I>LWHI2XV3kWRlRe]la>HK1
+Z30 V0?98T1W01MjL3NmFYo5_V1
+R3
 R17
 R18
 R19
-Z29 L0 357
-R8
+Z31 L0 355
+R7
 r1
 !s85 0
 31
@@ -81,5 +81,5 @@ R20
 R21
 R22
 !s101 -O0
-R10
-Z30 n@multimodca2_vlg_vec_tst
+R9
+Z32 n@multimodca2_vlg_vec_tst

@@ -1,5 +1,5 @@
 Assembler report for Multimodca2
-Sun Oct 26 16:26:27 2025
+Mon Oct 27 22:07:27 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Oct 26 16:26:27 2025 ;
+; Assembler Status      ; Successful - Mon Oct 27 22:07:27 2025 ;
 ; Revision Name         ; Multimodca2                           ;
 ; Top-level Entity Name ; Multimodca2                           ;
 ; Family                ; Cyclone III                           ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                                        ;
 +----------------+----------------------------------------------------------------------------------------------------------------+
 ; Device         ; EP3C120F780C7                                                                                                  ;
-; JTAG usercode  ; 0x00567A36                                                                                                     ;
-; Checksum       ; 0x00567A36                                                                                                     ;
+; JTAG usercode  ; 0x00566F9D                                                                                                     ;
+; Checksum       ; 0x00566F9D                                                                                                     ;
 +----------------+----------------------------------------------------------------------------------------------------------------+
 
 
@@ -103,14 +103,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 26 16:26:23 2025
+    Info: Processing started: Mon Oct 27 22:07:24 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Multimodca2 -c Multimodca2
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4566 megabytes
-    Info: Processing ended: Sun Oct 26 16:26:27 2025
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Mon Oct 27 22:07:27 2025
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 
 

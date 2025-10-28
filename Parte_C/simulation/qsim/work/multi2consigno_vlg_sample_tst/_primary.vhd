@@ -4,7 +4,6 @@ entity multi2consigno_vlg_sample_tst is
     port(
         a0              : in     vl_logic;
         a1              : in     vl_logic;
-        ALTO            : in     vl_logic;
         b0              : in     vl_logic;
         b1              : in     vl_logic;
         Cin             : in     vl_logic;

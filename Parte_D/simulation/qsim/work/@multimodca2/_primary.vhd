@@ -9,9 +9,8 @@ entity Multimodca2 is
         b1              : in     vl_logic;
         a1              : in     vl_logic;
         PRN             : in     vl_logic;
-        CLK             : in     vl_logic;
         CLRN            : in     vl_logic;
-        ALTO            : in     vl_logic;
+        CLK             : in     vl_logic;
         Out1_signo      : out    vl_logic;
         Out3_signo      : out    vl_logic;
         Out2_signo      : out    vl_logic;

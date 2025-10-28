@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 168 224)
+	(rect 16 16 168 192)
 	(text "multi2consigno" (rect 5 0 61 12)(font "Arial" ))
-	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -68,23 +68,16 @@ applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "CLK" (rect 0 0 20 12)(font "Arial" ))
-		(text "CLK" (rect 21 123 41 135)(font "Arial" ))
+		(text "CLRN" (rect 0 0 28 12)(font "Arial" ))
+		(text "CLRN" (rect 21 123 49 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
 		(pt 0 144)
 		(input)
-		(text "CLRN" (rect 0 0 28 12)(font "Arial" ))
-		(text "CLRN" (rect 21 139 49 151)(font "Arial" ))
+		(text "CLK" (rect 0 0 20 12)(font "Arial" ))
+		(text "CLK" (rect 21 139 41 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 1))
-	)
-	(port
-		(pt 0 160)
-		(input)
-		(text "ALTO" (rect 0 0 27 12)(font "Arial" ))
-		(text "ALTO" (rect 21 155 48 167)(font "Arial" ))
-		(line (pt 0 160)(pt 16 160)(line_width 1))
 	)
 	(port
 		(pt 152 32)
@@ -115,6 +108,6 @@ applicable agreement for further details.
 		(line (pt 152 80)(pt 136 80)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 136 192)(line_width 1))
+		(rectangle (rect 16 16 136 160)(line_width 1))
 	)
 )

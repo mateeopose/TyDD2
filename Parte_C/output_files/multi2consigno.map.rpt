@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multi2consigno
-Sun Oct 26 16:37:46 2025
+Mon Oct 27 21:55:11 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 26 16:37:46 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 27 21:55:11 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; multi2consigno                                  ;
 ; Top-level Entity Name              ; multi2consigno                                  ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 26                                              ;
-;     Total combinational functions  ; 26                                              ;
+; Total logic elements               ; 23                                              ;
+;     Total combinational functions  ; 23                                              ;
 ;     Dedicated logic registers      ; 8                                               ;
 ; Total registers                    ; 8                                               ;
-; Total pins                         ; 13                                              ;
+; Total pins                         ; 12                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -161,7 +161,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; ../Parte_A/Sumador_Completo.vhd  ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_A/Sumador_Completo.vhd ;         ;
+; Sumador_Completo.vhd             ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_C/Sumador_Completo.vhd ;         ;
 ; multi2consigno.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_C/multi2consigno.bdf   ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
@@ -171,41 +171,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 26       ;
+; Estimated Total logic elements              ; 23       ;
 ;                                             ;          ;
-; Total combinational functions               ; 26       ;
+; Total combinational functions               ; 23       ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 16       ;
-;     -- 3 input functions                    ; 2        ;
-;     -- <=2 input functions                  ; 8        ;
+;     -- 4 input functions                    ; 14       ;
+;     -- 3 input functions                    ; 3        ;
+;     -- <=2 input functions                  ; 6        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 26       ;
+;     -- normal mode                          ; 23       ;
 ;     -- arithmetic mode                      ; 0        ;
 ;                                             ;          ;
 ; Total registers                             ; 8        ;
 ;     -- Dedicated logic registers            ; 8        ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 13       ;
+; I/O pins                                    ; 12       ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ; Maximum fan-out node                        ; inst12~1 ;
 ; Maximum fan-out                             ; 17       ;
-; Total fan-out                               ; 127      ;
-; Average fan-out                             ; 2.12     ;
+; Total fan-out                               ; 117      ;
+; Average fan-out                             ; 2.13     ;
 +---------------------------------------------+----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                               ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
-; Compilation Hierarchy Node   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
-; |multi2consigno              ; 26 (22)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |multi2consigno                         ; work         ;
-;    |Sumador_Completo:inst18| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multi2consigno|Sumador_Completo:inst18 ; work         ;
-;    |Sumador_Completo:inst2|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multi2consigno|Sumador_Completo:inst2  ; work         ;
-;    |Sumador_Completo:inst3|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multi2consigno|Sumador_Completo:inst3  ; work         ;
-+------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; |multi2consigno             ; 23 (22)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |multi2consigno                        ; work         ;
+;    |Sumador_Completo:inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |multi2consigno|Sumador_Completo:inst2 ; work         ;
++-----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -239,17 +237,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 26 16:37:44 2025
+    Info: Processing started: Mon Oct 27 21:55:10 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multi2consigno -c multi2consigno
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /users/usuario/documents/facultad/tydd2/programasvhdl/prueba_1/parte_a/sumador_completo.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file sumador_completo.vhd
     Info (12022): Found design unit 1: Sumador_Completo-comportamiento
     Info (12023): Found entity 1: Sumador_Completo
 Info (12021): Found 1 design units, including 1 entities, in source file multi2consigno.bdf
     Info (12023): Found entity 1: multi2consigno
+Info (12021): Found 2 design units, including 1 entities, in source file tb_multi2consigno.vhd
+    Info (12022): Found design unit 1: TB_multi2consigno-comportamiento
+    Info (12023): Found entity 1: TB_multi2consigno
 Info (12127): Elaborating entity "multi2consigno" for the top level hierarchy
-Warning (275011): Block or symbol "DFF" of instance "inst10" overlaps another block or symbol
-Warning (275011): Block or symbol "NOT" of instance "inst16" overlaps another block or symbol
 Info (12128): Elaborating entity "Sumador_Completo" for hierarchy "Sumador_Completo:inst2"
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "inst12" is converted into an equivalent circuit using register "inst12~_emulated" and latch "inst12~1"
@@ -263,14 +262,14 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
     Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 26 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info (21061): Implemented 23 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Sun Oct 26 16:37:46 2025
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Mon Oct 27 21:55:11 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

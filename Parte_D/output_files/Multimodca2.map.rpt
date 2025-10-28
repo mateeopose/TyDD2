@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Multimodca2
-Sun Oct 26 16:26:04 2025
+Mon Oct 27 22:07:10 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,10 +14,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "multi2consigno:inst2|Sumador_Completo:b2v_inst22"
- 10. Port Connectivity Checks: "multi2consigno:inst2|Sumador_Completo:b2v_inst18"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "multi2consigno:inst1|Sumador_Completo:b2v_inst8"
+ 10. Port Connectivity Checks: "multi2consigno:inst1|Sumador_Completo:b2v_inst22"
+ 11. Port Connectivity Checks: "multi2consigno:inst1|Sumador_Completo:b2v_inst18"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +44,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 26 16:26:04 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 27 22:07:10 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Multimodca2                                     ;
 ; Top-level Entity Name              ; Multimodca2                                     ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 35                                              ;
-;     Total combinational functions  ; 35                                              ;
+; Total logic elements               ; 33                                              ;
+;     Total combinational functions  ; 33                                              ;
 ;     Dedicated logic registers      ; 8                                               ;
 ; Total registers                    ; 8                                               ;
-; Total pins                         ; 17                                              ;
+; Total pins                         ; 16                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -163,9 +164,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; ../Parte_A/Sumador_Completo.vhd  ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_A/Sumador_Completo.vhd ;         ;
-; ../Parte_B/multi2sinsigno.vhd    ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_B/multi2sinsigno.vhd   ;         ;
-; ../Parte_C/multi2consigno.vhd    ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_C/multi2consigno.vhd   ;         ;
+; Sumador_Completo.vhd             ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_D/Sumador_Completo.vhd ;         ;
+; multi2sinsigno.vhd               ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_D/multi2sinsigno.vhd   ;         ;
+; multi2consigno.vhd               ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_D/multi2consigno.vhd   ;         ;
 ; Multimodca2.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_D/Multimodca2.bdf      ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
@@ -175,44 +176,44 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimated Total logic elements              ; 35                          ;
+; Estimated Total logic elements              ; 33                          ;
 ;                                             ;                             ;
-; Total combinational functions               ; 35                          ;
+; Total combinational functions               ; 33                          ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 19                          ;
+;     -- 4 input functions                    ; 18                          ;
 ;     -- 3 input functions                    ; 3                           ;
-;     -- <=2 input functions                  ; 13                          ;
+;     -- <=2 input functions                  ; 12                          ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 35                          ;
+;     -- normal mode                          ; 33                          ;
 ;     -- arithmetic mode                      ; 0                           ;
 ;                                             ;                             ;
 ; Total registers                             ; 8                           ;
 ;     -- Dedicated logic registers            ; 8                           ;
 ;     -- I/O registers                        ; 0                           ;
 ;                                             ;                             ;
-; I/O pins                                    ; 17                          ;
+; I/O pins                                    ; 16                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                           ;
-; Maximum fan-out node                        ; multi2consigno:inst2|Out0~1 ;
+; Maximum fan-out node                        ; multi2consigno:inst1|Out0~1 ;
 ; Maximum fan-out                             ; 17                          ;
-; Total fan-out                               ; 160                         ;
-; Average fan-out                             ; 2.08                        ;
+; Total fan-out                               ; 153                         ;
+; Average fan-out                             ; 2.10                        ;
 +---------------------------------------------+-----------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
-+-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
-+-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; |Multimodca2                        ; 35 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |Multimodca2                                                  ; work         ;
-;    |multi2consigno:inst2|           ; 27 (25)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2consigno:inst2                             ; work         ;
-;       |Sumador_Completo:b2v_inst18| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst18 ; work         ;
-;       |Sumador_Completo:b2v_inst3|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2consigno:inst2|Sumador_Completo:b2v_inst3  ; work         ;
-;    |multi2sinsigno:inst|            ; 8 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2sinsigno:inst                              ; work         ;
-;       |Sumador_Completo:b2v_inst1|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2sinsigno:inst|Sumador_Completo:b2v_inst1   ; work         ;
-;       |Sumador_Completo:b2v_inst|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2sinsigno:inst|Sumador_Completo:b2v_inst    ; work         ;
-+-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Library Name ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
+; |Multimodca2                       ; 33 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Multimodca2                                                 ; work         ;
+;    |multi2consigno:inst1|          ; 25 (23)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2consigno:inst1                            ; work         ;
+;       |Sumador_Completo:b2v_inst2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2consigno:inst1|Sumador_Completo:b2v_inst2 ; work         ;
+;       |Sumador_Completo:b2v_inst3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2consigno:inst1|Sumador_Completo:b2v_inst3 ; work         ;
+;    |multi2sinsigno:inst|           ; 8 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2sinsigno:inst                             ; work         ;
+;       |Sumador_Completo:b2v_inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2sinsigno:inst|Sumador_Completo:b2v_inst1  ; work         ;
+;       |Sumador_Completo:b2v_inst|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Multimodca2|multi2sinsigno:inst|Sumador_Completo:b2v_inst   ; work         ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -231,8 +232,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------------------------------+
+; Port Connectivity Checks: "multi2consigno:inst1|Sumador_Completo:b2v_inst8" ;
++------+-------+----------+---------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                           ;
++------+-------+----------+---------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at VCC                                      ;
++------+-------+----------+---------------------------------------------------+
+
+
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multi2consigno:inst2|Sumador_Completo:b2v_inst22"                                   ;
+; Port Connectivity Checks: "multi2consigno:inst1|Sumador_Completo:b2v_inst22"                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -241,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "multi2consigno:inst2|Sumador_Completo:b2v_inst18"                                   ;
+; Port Connectivity Checks: "multi2consigno:inst1|Sumador_Completo:b2v_inst18"                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -265,44 +275,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 26 16:26:01 2025
+    Info: Processing started: Mon Oct 27 22:07:08 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multimodca2 -c Multimodca2
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /users/usuario/documents/facultad/tydd2/programasvhdl/prueba_1/parte_a/sumador_completo.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file sumador_completo.vhd
     Info (12022): Found design unit 1: Sumador_Completo-comportamiento
     Info (12023): Found entity 1: Sumador_Completo
-Info (12021): Found 2 design units, including 1 entities, in source file /users/usuario/documents/facultad/tydd2/programasvhdl/prueba_1/parte_b/multi2sinsigno.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file multi2sinsigno.vhd
     Info (12022): Found design unit 1: multi2sinsigno-bdf_type
     Info (12023): Found entity 1: multi2sinsigno
-Info (12021): Found 2 design units, including 1 entities, in source file /users/usuario/documents/facultad/tydd2/programasvhdl/prueba_1/parte_c/multi2consigno.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file multi2consigno.vhd
     Info (12022): Found design unit 1: multi2consigno-bdf_type
     Info (12023): Found entity 1: multi2consigno
 Info (12021): Found 1 design units, including 1 entities, in source file multimodca2.bdf
     Info (12023): Found entity 1: Multimodca2
 Info (12127): Elaborating entity "Multimodca2" for the top level hierarchy
-Info (12128): Elaborating entity "multi2consigno" for hierarchy "multi2consigno:inst2"
-Info (12128): Elaborating entity "Sumador_Completo" for hierarchy "multi2consigno:inst2|Sumador_Completo:b2v_inst18"
+Info (12128): Elaborating entity "multi2consigno" for hierarchy "multi2consigno:inst1"
+Info (12128): Elaborating entity "Sumador_Completo" for hierarchy "multi2consigno:inst1|Sumador_Completo:b2v_inst18"
 Info (12128): Elaborating entity "multi2sinsigno" for hierarchy "multi2sinsigno:inst"
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "multi2consigno:inst2|Out0" is converted into an equivalent circuit using register "multi2consigno:inst2|Out0~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|Out1" is converted into an equivalent circuit using register "multi2consigno:inst2|Out1~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|Out3" is converted into an equivalent circuit using register "multi2consigno:inst2|Out3~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|Out2" is converted into an equivalent circuit using register "multi2consigno:inst2|Out2~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|DFF_inst" is converted into an equivalent circuit using register "multi2consigno:inst2|DFF_inst~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|SYNTHESIZED_WIRE_20" is converted into an equivalent circuit using register "multi2consigno:inst2|SYNTHESIZED_WIRE_20~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|DFF_inst11" is converted into an equivalent circuit using register "multi2consigno:inst2|DFF_inst11~_emulated" and latch "multi2consigno:inst2|Out0~1"
-    Warning (13310): Register "multi2consigno:inst2|DFF_inst10" is converted into an equivalent circuit using register "multi2consigno:inst2|DFF_inst10~_emulated" and latch "multi2consigno:inst2|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|Out0" is converted into an equivalent circuit using register "multi2consigno:inst1|Out0~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|Out1" is converted into an equivalent circuit using register "multi2consigno:inst1|Out1~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|Out3" is converted into an equivalent circuit using register "multi2consigno:inst1|Out3~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|Out2" is converted into an equivalent circuit using register "multi2consigno:inst1|Out2~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|SYNTHESIZED_WIRE_19" is converted into an equivalent circuit using register "multi2consigno:inst1|SYNTHESIZED_WIRE_19~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|SYNTHESIZED_WIRE_24" is converted into an equivalent circuit using register "multi2consigno:inst1|SYNTHESIZED_WIRE_24~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|SYNTHESIZED_WIRE_22" is converted into an equivalent circuit using register "multi2consigno:inst1|SYNTHESIZED_WIRE_22~_emulated" and latch "multi2consigno:inst1|Out0~1"
+    Warning (13310): Register "multi2consigno:inst1|SYNTHESIZED_WIRE_20" is converted into an equivalent circuit using register "multi2consigno:inst1|SYNTHESIZED_WIRE_20~_emulated" and latch "multi2consigno:inst1|Out0~1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
+Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 35 logic cells
+    Info (21061): Implemented 33 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Sun Oct 26 16:26:04 2025
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Mon Oct 27 22:07:10 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

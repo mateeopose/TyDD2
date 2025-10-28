@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/23/2025 23:58:11"
+// Generated on "10/27/2025 21:02:04"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    multi2sinsigno
 // 
@@ -268,28 +268,81 @@ multi2sinsigno i1 (
 	.Out3(Out3)
 );
 
+// a1
+initial
+begin
+	a1 = 1'b0;
+	a1 = #175000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #35000 1'b0;
+	a1 = #35000 1'b1;
+	a1 = #70000 1'b0;
+	a1 = #210000 1'b1;
+	a1 = #105000 1'b0;
+	a1 = #70000 1'b1;
+	a1 = #70000 1'b0;
+	a1 = #105000 1'b1;
+	a1 = #35000 1'b0;
+end 
+
 // a0
 initial
 begin
 	a0 = 1'b1;
+	a0 = #70000 1'b0;
+	a0 = #70000 1'b1;
+	a0 = #140000 1'b0;
+	a0 = #35000 1'b1;
+	a0 = #70000 1'b0;
+	a0 = #35000 1'b1;
+	a0 = #70000 1'b0;
+	a0 = #35000 1'b1;
+	a0 = #175000 1'b0;
+	a0 = #70000 1'b1;
+	a0 = #70000 1'b0;
+	a0 = #70000 1'b1;
+	a0 = #70000 1'b0;
 end 
 
-// a1
+// b1
 initial
 begin
-	a1 = 1'b1;
+	b1 = 1'b0;
+	b1 = #35000 1'b1;
+	b1 = #245000 1'b0;
+	b1 = #35000 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #35000 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #35000 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #210000 1'b1;
+	b1 = #70000 1'b0;
+	b1 = #105000 1'b1;
 end 
 
 // b0
 initial
 begin
 	b0 = 1'b1;
-end 
-
-// b1
-initial
-begin
-	b1 = 1'b1;
+	b0 = #35000 1'b0;
+	b0 = #70000 1'b1;
+	b0 = #35000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #35000 1'b0;
+	b0 = #140000 1'b1;
+	b0 = #70000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #35000 1'b0;
+	b0 = #105000 1'b1;
+	b0 = #70000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #140000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #35000 1'b0;
+	b0 = #35000 1'b1;
+	b0 = #35000 1'b0;
 end 
 
 // Cin

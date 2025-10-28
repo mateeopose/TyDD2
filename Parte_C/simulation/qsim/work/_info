@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_C\simulation\qsim
 vmulti2consigno
-Z1 !s100 `i@hUe2iXden2_GE[47iR0
-Z2 I`GaG_ZViYRVW8hmOn`N@03
-Z3 V_eN<ZZEODMZ1fMbG0b_n03
+Z1 !s100 j?ZO51Cd?I2kPB=UBS9ha3
+Z2 IUZQTUmCDMUighK1dKYN5J2
+Z3 VD2IO1N_G4=@ko49zAaLBB3
 Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_C\simulation\qsim
-Z5 w1761507496
+Z5 w1761611770
 Z6 8multi2consigno.vo
 Z7 Fmulti2consigno.vo
 L0 31
@@ -19,63 +19,63 @@ Z9 !s90 -work|work|multi2consigno.vo|
 Z10 o-work work -O0
 !i10b 1
 !s85 0
-Z11 !s108 1761507497.781000
+Z11 !s108 1761611770.702000
 Z12 !s107 multi2consigno.vo|
 !s101 -O0
 vmulti2consigno_vlg_check_tst
 !i10b 1
-Z13 !s100 A778;LSj1Sdk1z4EO4lC01
-Z14 IOD<jQWA3Wfb^lCbSJ34Ke3
+Z13 !s100 A134mC^D>HI@9;Fdi=dX33
+Z14 IDlkd==AiE=SQIjzhXMjmf1
 Z15 VzC8h5e_z4nYP[c`F^Og[m2
 R4
-R5
-Z16 8multi2consigno.vt
-Z17 Fmulti2consigno.vt
-L0 73
+Z16 w1761611769
+Z17 8multi2consigno.vt
+Z18 Fmulti2consigno.vt
+L0 71
 R8
 r1
 !s85 0
 31
-Z18 !s108 1761507497.864000
-Z19 !s107 multi2consigno.vt|
-Z20 !s90 -work|work|multi2consigno.vt|
+Z19 !s108 1761611770.752000
+Z20 !s107 multi2consigno.vt|
+Z21 !s90 -work|work|multi2consigno.vt|
 !s101 -O0
 R10
 vmulti2consigno_vlg_sample_tst
 !i10b 1
-Z21 !s100 ggF82E=2W2MoP3J^30]iL0
-Z22 I5QHJgWS8he2O[ELY[3onV2
-Z23 VzNERNoTh52`RJ?na>ABeQ1
+Z22 !s100 `6@8XlI1R?3471I^[3]`92
+Z23 I5AP;Fj8K33PgJE`;6Nnd=2
+Z24 VlkNG11Kj]V9D>^gVTgKiX3
 R4
-R5
 R16
 R17
+R18
 L0 29
 R8
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !s101 -O0
 R10
 vmulti2consigno_vlg_vec_tst
 !i10b 1
-Z24 !s100 gkkkV;BOCJ3Y@70jW8hVT2
-Z25 Iah6IOzc84=3P9EWmIS3l60
-Z26 VM7[TgV<OdQ?RP4DcDT;O=1
+!s100 S92=G17S^>PWfIJlA1oFd1
+I>VH87OMAH18bQG`d:fiDS1
+Z25 VM7[TgV<OdQ?RP4DcDT;O=1
 R4
-R5
 R16
 R17
-Z27 L0 249
+R18
+Z26 L0 247
 R8
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !s101 -O0
 R10

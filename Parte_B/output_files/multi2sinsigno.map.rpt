@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multi2sinsigno
-Thu Oct 23 16:25:02 2025
+Mon Oct 27 20:59:25 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 23 16:25:02 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 27 20:59:25 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; multi2sinsigno                                  ;
 ; Top-level Entity Name              ; multi2sinsigno                                  ;
@@ -161,7 +161,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; ../Parte_A/Sumador_Completo.vhd  ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_A/Sumador_Completo.vhd ;         ;
+; Sumador_Completo.vhd             ; yes             ; User VHDL File                     ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_B/Sumador_Completo.vhd ;         ;
 ; multi2sinsigno.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_B/multi2sinsigno.bdf   ;         ;
 +----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
@@ -238,10 +238,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 23 16:25:01 2025
+    Info: Processing started: Mon Oct 27 20:59:24 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multi2sinsigno -c multi2sinsigno
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /users/usuario/documents/facultad/tydd2/programasvhdl/prueba_1/parte_a/sumador_completo.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file sumador_completo.vhd
     Info (12022): Found design unit 1: Sumador_Completo-comportamiento
     Info (12023): Found entity 1: Sumador_Completo
 Info (12021): Found 1 design units, including 1 entities, in source file multi2sinsigno.bdf
@@ -259,8 +259,8 @@ Info (21057): Implemented 17 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4636 megabytes
-    Info: Processing ended: Thu Oct 23 16:25:02 2025
+    Info: Peak virtual memory: 4640 megabytes
+    Info: Processing ended: Mon Oct 27 20:59:25 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
