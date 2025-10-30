@@ -4,22 +4,22 @@ K3
 cModel Technology
 Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_F\simulation\qsim
 vi2c
-Z1 !s100 ^cK`?XiARjW<i:9P]L6GJ0
-Z2 I;h50VURPSOFjI`XecNHC:0
-Z3 VGB_k`jo19XbJF45__1o2R2
-Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_F\simulation\qsim
-Z5 w1761514676
-Z6 8i2c.vo
-Z7 Fi2c.vo
+Z1 I;h50VURPSOFjI`XecNHC:0
+Z2 VGB_k`jo19XbJF45__1o2R2
+Z3 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_F\simulation\qsim
+Z4 w1761845202
+Z5 8i2c.vo
+Z6 Fi2c.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|i2c.vo|
-Z10 o-work work -O0
+Z8 !s90 -work|work|i2c.vo|
+Z9 o-work work -O0
 !i10b 1
+Z10 !s100 ^cK`?XiARjW<i:9P]L6GJ0
 !s85 0
-Z11 !s108 1761514676.896000
+Z11 !s108 1761845202.877000
 Z12 !s107 i2c.vo|
 !s101 -O0
 vi2c_vlg_check_tst
@@ -27,31 +27,31 @@ vi2c_vlg_check_tst
 Z13 !s100 mUU7[1a]S6@1IJbR>VhcU1
 Z14 IS0PD8>RFk=iFQ?F?<Ed0U3
 Z15 VL8ejK6hEzcT74k79VmBN62
-R4
-Z16 w1761514675
+R3
+Z16 w1761845201
 Z17 8i2c.vt
 Z18 Fi2c.vt
 L0 67
-R8
+R7
 r1
 !s85 0
 31
-Z19 !s108 1761514676.951000
+Z19 !s108 1761845202.933000
 Z20 !s107 i2c.vt|
 Z21 !s90 -work|work|i2c.vt|
 !s101 -O0
-R10
+R9
 vi2c_vlg_sample_tst
 !i10b 1
 Z22 !s100 >7ikL;KMhSZ?i5Ra2XKER3
 Z23 ITKfeKAAnB8Vi:2JfVa]P42
 Z24 V;BLZ?UgVc=nONPJT6@jeN1
-R4
+R3
 R16
 R17
 R18
 L0 29
-R8
+R7
 r1
 !s85 0
 31
@@ -59,18 +59,18 @@ R19
 R20
 R21
 !s101 -O0
-R10
+R9
 vi2c_vlg_vec_tst
 !i10b 1
-!s100 IX2[VCzBX7`5XjCV91cfZ3
-In[64:7aKf;nmPTPg_gnfa3
+!s100 FOdViaF[Pm4Hn==^0k1`S1
+I]`i[`2Xe[dP8<8i2P:GLc0
 Z25 VG7leF=koEPmlj1YS<cFiE2
-R4
+R3
 R16
 R17
 R18
 Z26 L0 216
-R8
+R7
 r1
 !s85 0
 31
@@ -78,4 +78,4 @@ R19
 R20
 R21
 !s101 -O0
-R10
+R9

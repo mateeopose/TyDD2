@@ -1,5 +1,5 @@
 EDA Netlist Writer report for maqestados
-Sun Oct 26 18:06:10 2025
+Thu Oct 30 13:42:42 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Oct 26 18:06:10 2025 ;
+; EDA Netlist Writer Status ; Successful - Thu Oct 30 13:42:42 2025 ;
 ; Revision Name             ; maqestados                            ;
 ; Top-level Entity Name     ; maqestados                            ;
 ; Family                    ; Cyclone III                           ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Oct 26 18:06:09 2025
+    Info: Processing started: Thu Oct 30 13:42:42 2025
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog maqestados -c maqestados
 Info (204019): Generated file maqestados.vo in folder "C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_E/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4530 megabytes
-    Info: Processing ended: Sun Oct 26 18:06:10 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Processing ended: Thu Oct 30 13:42:42 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 

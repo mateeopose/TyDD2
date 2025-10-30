@@ -25,7 +25,10 @@
 # Loading altera_ver.dffeas
 # Loading work.multi2consigno_vlg_sample_tst
 # Loading work.multi2consigno_vlg_check_tst
-# Loading altera_ver.PRIM_GDFF_LOW
-# Simulation passed !
-# ** Note: $finish    : multi2consigno.vt(243)
-#    Time: 1 us  Iteration: 0  Instance: /multi2consigno_vlg_vec_tst/tb_out
+# ** Error: (vsim-3389) multi2consigno.vt(310): Port 'prueba' not found in the connected module (13th connection).
+# 
+#         Region: /multi2consigno_vlg_vec_tst/i1
+# ** Fatal: (vsim-3365) multi2consigno.vt(310): Too many port connections. Expected 12, found 13.
+#    Time: 0 ps  Iteration: 0  Instance: /multi2consigno_vlg_vec_tst/i1 File: multi2consigno.vo
+# FATAL ERROR while loading design
+# Error loading design

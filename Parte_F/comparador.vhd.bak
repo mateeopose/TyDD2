@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY comparador IS
+    PORT (
+        direccion : IN STD_LOGIC_vector(7 downto 0);
+		  direccion2 : IN STD_LOGIC_vector(7 downto 0);
+
+        soy : OUT STD_LOGIC
+    );
+END comparador;
+
+ARCHITECTURE BEHAVIOR OF comparador IS
+    
+BEGIN
+	soy <= nor(direccion xor direccion2);
+	
+END BEHAVIOR

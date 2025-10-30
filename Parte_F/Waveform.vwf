@@ -138,12 +138,10 @@ TRANSITION_LIST("clock")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 66;
-			LEVEL 0 FOR 7.5;
-			LEVEL 1 FOR 7.5;
+			REPEAT = 20;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
-		LEVEL 0 FOR 7.5;
-		LEVEL 1 FOR 2.5;
 	}
 }
 

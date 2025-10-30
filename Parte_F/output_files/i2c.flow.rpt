@@ -1,5 +1,5 @@
 Flow report for i2c
-Sun Oct 26 18:41:03 2025
+Thu Oct 30 16:48:01 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 26 18:41:03 2025           ;
+; Flow Status                        ; Flow Failed - Thu Oct 30 16:48:01 2025          ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; i2c                                             ;
-; Top-level Entity Name              ; i2c                                             ;
+; Top-level Entity Name              ; comparador                                      ;
 ; Family                             ; Cyclone III                                     ;
 ; Device                             ; EP3C120F780C7                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 6 / 119,088 ( < 1 % )                           ;
-;     Total combinational functions  ; 5 / 119,088 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 5 / 119,088 ( < 1 % )                           ;
-; Total registers                    ; 5                                               ;
-; Total pins                         ; 9 / 532 ( 2 % )                                 ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                           ;
-; Embedded Multiplier 9-bit elements ; 0 / 576 ( 0 % )                                 ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
+; Total logic elements               ; N/A until Partition Merge                       ;
+;     Total combinational functions  ; N/A until Partition Merge                       ;
+;     Dedicated logic registers      ; N/A until Partition Merge                       ;
+; Total registers                    ; N/A until Partition Merge                       ;
+; Total pins                         ; N/A until Partition Merge                       ;
+; Total virtual pins                 ; N/A until Partition Merge                       ;
+; Total memory bits                  ; N/A until Partition Merge                       ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                       ;
+; Total PLLs                         ; N/A until Partition Merge                       ;
 +------------------------------------+-------------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/26/2025 18:40:40 ;
+; Start date & time ; 10/30/2025 16:48:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; i2c                 ;
 +-------------------+---------------------+
@@ -75,58 +75,71 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 44225925188410.176151484015452        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 44225925188410.176185368017036        ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
+; IP_TOOL_NAME                        ; LPM_SHIFTREG                          ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                           ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_SHIFTREG                          ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_shiftreg0.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_shiftreg0.cmp                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter0.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter0.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter1.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter1.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter2.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter2.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter3.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_counter3.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_shiftreg1.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_shiftreg1.cmp                     ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; comparador  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; comparador  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; comparador  ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; comparador                            ; i2c           ; --          ; --             ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                             ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:14     ; 1.0                     ; 5051 MB             ; 00:00:12                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4558 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4646 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4510 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:17                           ;
-+---------------------------+--------------+-------------------------+---------------------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4619 MB             ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-9KFG860  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-9KFG860  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-9KFG860  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-9KFG860  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-9KFG860  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-9KFG860  ; Windows 7 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off i2c -c i2c
-quartus_fit --read_settings_files=off --write_settings_files=off i2c -c i2c
-quartus_asm --read_settings_files=off --write_settings_files=off i2c -c i2c
-quartus_sta i2c -c i2c
-quartus_eda --read_settings_files=off --write_settings_files=off i2c -c i2c
 
 
 

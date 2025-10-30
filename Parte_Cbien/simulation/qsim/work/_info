@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_Cbien\simulation\qsim
+vmulti2consigno
+Z1 !s100 PUl4e@41ebg@PgY^HoUkL2
+Z2 I?EWRWJQGc`c3MoF9`1k231
+Z3 V3S[M0S]nzc7Ue1XmXY>TH2
+Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_Cbien\simulation\qsim
+Z5 w1761847966
+Z6 8partecbien.vo
+Z7 Fpartecbien.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|partecbien.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1761847967.141000
+Z12 !s107 partecbien.vo|
+!s101 -O0
+vmulti2consigno_vlg_check_tst
+!i10b 1
+Z13 !s100 BzoPUl6zlHClN=G;o7K0_1
+Z14 IJ6h`F_zkMT@Ez56inFRn00
+Z15 V=G1;HSG;@X`ILEF>^?gQQ1
+R4
+Z16 w1761847965
+Z17 8partecbien.vt
+Z18 Fpartecbien.vt
+L0 71
+R8
+r1
+!s85 0
+31
+Z19 !s108 1761847967.241000
+Z20 !s107 partecbien.vt|
+Z21 !s90 -work|work|partecbien.vt|
+!s101 -O0
+R10
+vmulti2consigno_vlg_sample_tst
+!i10b 1
+Z22 !s100 _mQ@iEE@VEh2jzIbI4M9Y1
+Z23 IPd>=S0EL0WeAb8E5VL_Co2
+Z24 VlkNG11Kj]V9D>^gVTgKiX3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vmulti2consigno_vlg_vec_tst
+!i10b 1
+!s100 J@WozaSeTEf_2^3RDbXP72
+I<@H>76Vc>9<zV@iHnjJjQ1
+Z25 VM7[TgV<OdQ?RP4DcDT;O=1
+R4
+R16
+R17
+R18
+Z26 L0 276
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
