@@ -1,5 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="i2c">
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuitoi2c|lpm_counter2:inst5|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_0hj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|circuitoi2c|lpm_counter3:inst4|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_vgj.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
