@@ -1,5 +1,5 @@
 
-State Machine - |circuitoi2c|i2c:inst|fstate
+State Machine - |circuitoi2c|i2c:inst11|fstate
 Name fstate.guarda_dato fstate.ACK fstate.RW fstate.guarda_direc fstate.Idle 
 fstate.Idle 0 0 0 0 0 
 fstate.guarda_direc 0 0 0 1 1 

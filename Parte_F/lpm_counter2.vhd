@@ -130,6 +130,6 @@ END SYN;
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter2.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter2.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter2.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter2.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter2.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter2_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

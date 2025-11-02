@@ -1,0 +1,93 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do i2c_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_counter2
+# -- Compiling architecture SYN of lpm_counter2
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_counter3
+# -- Compiling architecture SYN of lpm_counter3
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_shiftreg1
+# -- Compiling architecture SYN of lpm_shiftreg1
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity comparador
+# -- Compiling architecture BEHAVIOR of comparador
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_shiftreg2
+# -- Compiling architecture SYN of lpm_shiftreg2
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/i2c.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity i2c
+# -- Compiling architecture BEHAVIOR of i2c
+# 
+# vcom -93 -work work {C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TB_circuitoi2c
+# -- Compiling architecture behavior of TB_circuitoi2c
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs="+acc"  TB_cirucitoi2c
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps TB_cirucitoi2c 
+# ** Error: (vsim-3170) Could not find 'C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/simulation/modelsim/rtl_work.TB_cirucitoi2c'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./i2c_run_msim_rtl_vhdl.do PAUSED at line 17
+vsim work.tb_circuitoi2c
+# vsim work.tb_circuitoi2c 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_circuitoi2c(behavior)
+# ** Warning: (vsim-3473) Component instance "uut : circuitoi2c" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_circuitoi2c File: C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd
+add wave -position insertpoint  \
+sim:/tb_circuitoi2c/clock \
+sim:/tb_circuitoi2c/sda \
+sim:/tb_circuitoi2c/fin_dato \
+sim:/tb_circuitoi2c/fin_dir \
+sim:/tb_circuitoi2c/soy \
+sim:/tb_circuitoi2c/habdir \
+sim:/tb_circuitoi2c/habdat \
+sim:/tb_circuitoi2c/ackout
+run -all
+# ** Note: Fin de simulación - Testbench completado correctamente
+#    Time: 130 ns  Iteration: 1  Instance: /tb_circuitoi2c
+# Break key hit 
+# Break in Process clock_gen at C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd line 53

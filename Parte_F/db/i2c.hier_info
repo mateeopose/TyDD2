@@ -1,6 +1,6 @@
 |circuitoi2c
-habdir <= i2c:inst.hab_dir
-clock => i2c:inst.clock
+habdir <= i2c:inst11.hab_dir
+clock => i2c:inst11.clock
 clock => lpm_counter3:inst4.clock
 clock => lpm_shiftreg1:inst9.clock
 clock => inst1.IN1
@@ -8,17 +8,17 @@ clock => lpm_shiftreg1:inst10.clock
 clock => lpm_counter2:inst5.clock
 clock => lpm_shiftreg2:inst6.clock
 clock => inst2.IN0
-sda => i2c:inst.sda
+sda => i2c:inst11.sda
 sda => sdaaa.DATAIN
-habdat <= i2c:inst.hab_dat
-ackout <= i2c:inst.ackout
+habdat <= i2c:inst11.hab_dat
+ackout <= i2c:inst11.ackout
 sdaaa <= sda.DB_MAX_OUTPUT_PORT_TYPE
 finndir <= lpm_counter3:inst4.cout
 finndato <= lpm_counter2:inst5.cout
 soooy <= comparador:inst3.soy
 
 
-|circuitoi2c|i2c:inst
+|circuitoi2c|i2c:inst11
 reset => fstate~3.DATAIN
 clock => fstate~1.DATAIN
 sda => Selector0.IN4

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for i2c
-Thu Oct 30 19:00:22 2025
+Sun Nov 02 11:40:18 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
-  9. State Machine - |circuitoi2c|i2c:inst|fstate
+  9. State Machine - |circuitoi2c|i2c:inst11|fstate
  10. Registers Removed During Synthesis
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
@@ -51,7 +51,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 30 19:00:22 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 02 11:40:18 2025           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; i2c                                             ;
 ; Top-level Entity Name              ; circuitoi2c                                     ;
@@ -256,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------+
-; State Machine - |circuitoi2c|i2c:inst|fstate                                                          ;
+; State Machine - |circuitoi2c|i2c:inst11|fstate                                                        ;
 +---------------------+--------------------+------------+-----------+---------------------+-------------+
 ; Name                ; fstate.guarda_dato ; fstate.ACK ; fstate.RW ; fstate.guarda_direc ; fstate.Idle ;
 +---------------------+--------------------+------------+-----------+---------------------+-------------+
@@ -282,11 +282,11 @@ Encoding Type:  One-Hot
 ; lpm_shiftreg1:inst9|lpm_shiftreg:LPM_SHIFTREG_component|dffs[6]        ; Merged with lpm_shiftreg1:inst10|lpm_shiftreg:LPM_SHIFTREG_component|dffs[6] ;
 ; lpm_shiftreg1:inst10|lpm_shiftreg:LPM_SHIFTREG_component|dffs[0,2,4,6] ; Lost fanout                                                                  ;
 ; lpm_shiftreg1:inst9|lpm_shiftreg:LPM_SHIFTREG_component|dffs[1,3,5]    ; Lost fanout                                                                  ;
-; i2c:inst|fstate.Idle                                                   ; Stuck at GND due to stuck port clear                                         ;
-; i2c:inst|fstate.guarda_direc                                           ; Stuck at GND due to stuck port clear                                         ;
-; i2c:inst|fstate.RW                                                     ; Stuck at GND due to stuck port clear                                         ;
-; i2c:inst|fstate.ACK                                                    ; Stuck at GND due to stuck port clear                                         ;
-; i2c:inst|fstate.guarda_dato                                            ; Stuck at GND due to stuck port clear                                         ;
+; i2c:inst11|fstate.Idle                                                 ; Stuck at GND due to stuck port clear                                         ;
+; i2c:inst11|fstate.guarda_direc                                         ; Stuck at GND due to stuck port clear                                         ;
+; i2c:inst11|fstate.RW                                                   ; Stuck at GND due to stuck port clear                                         ;
+; i2c:inst11|fstate.ACK                                                  ; Stuck at GND due to stuck port clear                                         ;
+; i2c:inst11|fstate.guarda_dato                                          ; Stuck at GND due to stuck port clear                                         ;
 ; Total Number of Removed Registers = 19                                 ;                                                                              ;
 +------------------------------------------------------------------------+------------------------------------------------------------------------------+
 
@@ -296,7 +296,7 @@ Encoding Type:  One-Hot
 +------------------------------------------------------------------+-------------------------+-----------------------------------------------------------------+
 ; Register name                                                    ; Reason for Removal      ; Registers Removed due to This Register                          ;
 +------------------------------------------------------------------+-------------------------+-----------------------------------------------------------------+
-; i2c:inst|fstate.RW                                               ; Stuck at GND            ; i2c:inst|fstate.ACK, i2c:inst|fstate.guarda_dato                ;
+; i2c:inst11|fstate.RW                                             ; Stuck at GND            ; i2c:inst11|fstate.ACK, i2c:inst11|fstate.guarda_dato            ;
 ;                                                                  ; due to stuck port clear ;                                                                 ;
 ; lpm_shiftreg1:inst10|lpm_shiftreg:LPM_SHIFTREG_component|dffs[6] ; Lost Fanouts            ; lpm_shiftreg1:inst9|lpm_shiftreg:LPM_SHIFTREG_component|dffs[5] ;
 ; lpm_shiftreg1:inst10|lpm_shiftreg:LPM_SHIFTREG_component|dffs[4] ; Lost Fanouts            ; lpm_shiftreg1:inst9|lpm_shiftreg:LPM_SHIFTREG_component|dffs[3] ;
@@ -460,7 +460,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Oct 30 19:00:20 2025
+    Info: Processing started: Sun Nov 02 11:40:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off i2c -c i2c
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file circuitoi2c.bdf
@@ -489,6 +489,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file compara
 Info (12021): Found 2 design units, including 1 entities, in source file lpm_shiftreg2.vhd
     Info (12022): Found design unit 1: lpm_shiftreg2-SYN
     Info (12023): Found entity 1: lpm_shiftreg2
+Info (12021): Found 2 design units, including 1 entities, in source file tb_circuitoi2c.vhd
+    Info (12022): Found design unit 1: TB_circuitoi2c-behavior
+    Info (12023): Found entity 1: TB_circuitoi2c
 Info (12127): Elaborating entity "circuitoi2c" for the top level hierarchy
 Warning (275083): Bus "direccion2[6..0]" found using same base name as "direccion", which might lead to a name conflict.
 Warning (275080): Converted elements in bus name "direccion" using legacy naming rules. Make any assignments on the new names, not on the original names.
@@ -498,7 +501,7 @@ Warning (275080): Converted elements in bus name "direccion2" using legacy namin
 Warning (12125): Using design file i2c.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: i2c-BEHAVIOR
     Info (12023): Found entity 1: i2c
-Info (12128): Elaborating entity "i2c" for hierarchy "i2c:inst"
+Info (12128): Elaborating entity "i2c" for hierarchy "i2c:inst11"
 Info (12128): Elaborating entity "lpm_counter3" for hierarchy "lpm_counter3:inst4"
 Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter3:inst4|lpm_counter:LPM_COUNTER_component"
 Info (12130): Elaborated megafunction instantiation "lpm_counter3:inst4|lpm_counter:LPM_COUNTER_component"
@@ -556,7 +559,7 @@ Info (21057): Implemented 17 device resources after synthesis - the final resour
     Info (21061): Implemented 8 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4638 megabytes
-    Info: Processing ended: Thu Oct 30 19:00:22 2025
+    Info: Processing ended: Sun Nov 02 11:40:18 2025
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

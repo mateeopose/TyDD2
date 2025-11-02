@@ -1,0 +1,250 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_F\simulation\modelsim
+Ecomparador
+Z1 w1761858502
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Usuario\Documents\Facultad\TyDD2\ProgramasVHDL\Prueba_1\Parte_F\simulation\modelsim
+Z5 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/comparador.vhd
+Z6 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/comparador.vhd
+l0
+L4
+VlXSYTdFAc9OQY6j^fk7oa1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1762093800.354000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/comparador.vhd|
+Z10 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/comparador.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 8903Iz^lTb^G4jTDGL:cY0
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 10 comparador 0 22 lXSYTdFAc9OQY6j^fk7oa1
+l15
+L13
+Vm^IT[PRV5fC@j;PcMU>[c3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 2CUM16InRzLM4H;;[fPfU1
+!i10b 1
+Ei2c
+Z13 w1761514435
+R2
+R3
+R4
+Z14 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/i2c.vhd
+Z15 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/i2c.vhd
+l0
+L21
+VATbg?GBNF;Zig3H>koW>[2
+R7
+31
+Z16 !s108 1762093800.491000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/i2c.vhd|
+Z18 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/i2c.vhd|
+R11
+R12
+!s100 g5aI6>C;Xi9n7B[?38Kkb2
+!i10b 1
+Abehavior
+R2
+R3
+DEx4 work 3 i2c 0 22 ATbg?GBNF;Zig3H>koW>[2
+l39
+L35
+Vj>G?HO?8Q2m?JPS:V0<@@3
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 :<m?Z8NZ76O9SAGOG=Z[[2
+!i10b 1
+Elpm_counter2
+Z19 w1762092405
+R2
+R3
+R4
+Z20 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter2.vhd
+Z21 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter2.vhd
+l0
+L42
+VTHGhhfJYHD5`QiWKe3W6@2
+R7
+31
+Z22 !s108 1762093800.134000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter2.vhd|
+Z24 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter2.vhd|
+R11
+R12
+!s100 30ZWPICXg?`kJTB[CYNMl2
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 12 lpm_counter2 0 22 THGhhfJYHD5`QiWKe3W6@2
+l74
+L52
+VaolXmJ<a27S=oNkRl@FzV2
+R7
+31
+R22
+R23
+R24
+R11
+R12
+!s100 i:4PfOfE14KGCaQ>;W:FH3
+!i10b 1
+Elpm_counter3
+Z25 w1761849616
+R2
+R3
+R4
+Z26 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter3.vhd
+Z27 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter3.vhd
+l0
+L42
+V`Lf>]NV6_b22;o586@KfH3
+R7
+31
+Z28 !s108 1762093800.206000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter3.vhd|
+Z30 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_counter3.vhd|
+R11
+R12
+!s100 3JLPgH`@X=]R8Y;0RV_;M3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 12 lpm_counter3 0 22 `Lf>]NV6_b22;o586@KfH3
+l74
+L52
+V=P<h]dgJieN0>2cU88cM]1
+R7
+31
+R28
+R29
+R30
+R11
+R12
+!s100 Tk?8IA2jZ6gdizM8CJaXF0
+!i10b 1
+Elpm_shiftreg1
+Z31 w1761849934
+R2
+R3
+R4
+Z32 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg1.vhd
+Z33 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg1.vhd
+l0
+L42
+VDFWA17R0;bIAem8Jz0;Gb2
+R7
+31
+Z34 !s108 1762093800.275000
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg1.vhd|
+Z36 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg1.vhd|
+R11
+R12
+!s100 P<zB3eWdMHz;6kNRJRbn]3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 13 lpm_shiftreg1 0 22 DFWA17R0;bIAem8Jz0;Gb2
+l71
+L52
+V6VHTj9`fc2K7Z][4TOgN[1
+R7
+31
+R34
+R35
+R36
+R11
+R12
+!s100 C5K_VMkOXLVBJ3m^5hI;I2
+!i10b 1
+Elpm_shiftreg2
+Z37 w1761859096
+R2
+R3
+R4
+Z38 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.vhd
+Z39 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.vhd
+l0
+L42
+V2i_BL7_YeMAgiQdInbQh;1
+R7
+31
+Z40 !s108 1762093800.420000
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.vhd|
+Z42 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.vhd|
+R11
+R12
+!s100 1aIM0in]Nmlj8VH]`<9e<3
+!i10b 1
+Asyn
+R2
+R3
+DEx4 work 13 lpm_shiftreg2 0 22 2i_BL7_YeMAgiQdInbQh;1
+l71
+L52
+V4mBk_9LAzel9n:4iC^2BZ3
+R7
+31
+R40
+R41
+R42
+R11
+R12
+!s100 39R;Va97Z37@Z_D?TIbGG0
+!i10b 1
+Etb_circuitoi2c
+Z43 w1762044526
+R2
+R3
+R4
+Z44 8C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd
+Z45 FC:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd
+l0
+L4
+VKC8nF8dHHU>dd;m:JjCZ:2
+!s100 3FS83SWj:oHVCMkO<4mTL2
+R7
+31
+!i10b 1
+Z46 !s108 1762093800.559000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd|
+Z48 !s107 C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd|
+R11
+R12
+Abehavior
+R2
+R3
+DEx4 work 14 tb_circuitoi2c 0 22 KC8nF8dHHU>dd;m:JjCZ:2
+l33
+L7
+VV5=l_LLhPnV2a7RdFU;Oj2
+!s100 EHHBR[f9K[dNGY@6E4d]02
+R7
+31
+!i10b 1
+R46
+R47
+R48
+R11
+R12

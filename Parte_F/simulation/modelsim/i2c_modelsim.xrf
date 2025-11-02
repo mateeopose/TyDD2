@@ -17,6 +17,7 @@ source_file = 1, C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_
 source_file = 1, C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/comparador.vhd
 source_file = 1, C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.qip
 source_file = 1, C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/lpm_shiftreg2.vhd
+source_file = 1, C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/TB_circuitoi2c.vhd
 source_file = 1, C:/Users/Usuario/Documents/Facultad/TyDD2/ProgramasVHDL/Prueba_1/Parte_F/db/i2c.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

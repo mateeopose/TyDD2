@@ -1,0 +1,107 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity TB_circuitoi2c is
+end TB_circuitoi2c;
+
+architecture test of TB_circuitoi2c is
+
+    -- Component under test
+    component circuitoi2c
+        port(
+            clock    : in  std_logic;
+            sda      : in  std_logic;
+            fin_dato : in  std_logic;
+            fin_dir  : in  std_logic;
+            soy      : in  std_logic;
+            habdir   : out std_logic;
+            habdat   : out std_logic;
+            ackout   : out std_logic
+        );
+    end component;
+
+    -- Señales de estímulo
+    signal clock_tb    : std_logic := '0';
+    signal sda_tb      : std_logic := '1';
+    signal fin_dato_tb : std_logic := '0';
+    signal fin_dir_tb  : std_logic := '0';
+    signal soy_tb      : std_logic := '0';
+
+    -- Salidas del DUT
+    signal habdir_tb   : std_logic;
+    signal habdat_tb   : std_logic;
+    signal ackout_tb   : std_logic;
+
+begin
+
+    -- Instancia del DUT (Device Under Test)
+    uut : circuitoi2c
+        port map(
+            clock    => clock_tb,
+            sda      => sda_tb,
+            fin_dato => fin_dato_tb,
+            fin_dir  => fin_dir_tb,
+            soy      => soy_tb,
+            habdir   => habdir_tb,
+            habdat   => habdat_tb,
+            ackout   => ackout_tb
+        );
+
+    ------------------------------------------------------------------
+    -- Generador de reloj
+    ------------------------------------------------------------------
+    clk_process : process
+    begin
+        clock_tb <= '0';
+        wait for 10 ns;
+        clock_tb <= '1';
+        wait for 10 ns;
+    end process;
+
+    ------------------------------------------------------------------
+    -- Estímulos principales
+    ------------------------------------------------------------------
+    stim_proc : process
+    begin
+        -- Estado inicial (reposo)
+        sda_tb <= '1';
+        fin_dir_tb <= '0';
+        fin_dato_tb <= '0';
+        soy_tb <= '0';
+        wait for 50 ns;
+
+        -- Inicio de transmisión I2C (start)
+        sda_tb <= '0';
+        wait for 80 ns;
+
+        -- Dirección en curso
+        fin_dir_tb <= '0';
+        wait for 80 ns;
+
+        -- Fin de dirección, y el esclavo coincide (soy=1)
+        fin_dir_tb <= '1';
+        soy_tb <= '1';
+        wait for 100 ns;
+
+        -- Pasamos a la fase de datos
+        fin_dir_tb <= '0';
+        fin_dato_tb <= '0';
+        wait for 120 ns;
+
+        -- Fin de datos -> vuelta al idle
+        fin_dato_tb <= '1';
+        wait for 80 ns;
+
+        -- Nueva transacción con dirección incorrecta
+        fin_dir_tb <= '1';
+        soy_tb <= '0';
+        wait for 100 ns;
+
+        -- Fin de simulación
+        wait for 200 ns;
+        assert false report "Fin de la simulación" severity note;
+        wait;
+    end process;
+
+end test;
