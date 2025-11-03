@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/02/2025 11:41:48"
+// Generated on "11/02/2025 21:44:40"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    circuitoi2c
 // 
@@ -28,16 +28,18 @@
 `timescale 1 ps/ 1 ps
 module circuitoi2c_vlg_sample_tst(
 	clock,
+	pin_name1,
 	sda,
 	sampler_tx
 );
 input  clock;
+input  pin_name1;
 input  sda;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clock or sda)
+always @(clock or pin_name1 or sda)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -317,6 +319,7 @@ module circuitoi2c_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clock;
+reg pin_name1;
 reg sda;
 // wires                                               
 wire ackout;
@@ -338,6 +341,7 @@ circuitoi2c i1 (
 	.finndir(finndir),
 	.habdat(habdat),
 	.habdir(habdir),
+	.pin_name1(pin_name1),
 	.sda(sda),
 	.sdaaa(sdaaa),
 	.soooy(soooy)
@@ -347,20 +351,27 @@ circuitoi2c i1 (
 always
 begin
 	clock = 1'b0;
-	clock = #12500 1'b1;
-	#12500;
+	clock = #25000 1'b1;
+	#25000;
+end 
+
+// pin_name1
+initial
+begin
+	pin_name1 = 1'b1;
+	pin_name1 = #50000 1'b0;
 end 
 
 // sda
 initial
 begin
-	sda = 1'b0;
-	sda = #10000 1'b1;
-	sda = #90000 1'b0;
+	sda = 1'b1;
+	sda = #50000 1'b0;
 end 
 
 circuitoi2c_vlg_sample_tst tb_sample (
 	.clock(clock),
+	.pin_name1(pin_name1),
 	.sda(sda),
 	.sampler_tx(sampler)
 );

@@ -1,5 +1,6 @@
 |circuitoi2c
 habdir <= i2c:inst11.hab_dir
+pin_name1 => i2c:inst11.reset
 clock => i2c:inst11.clock
 clock => lpm_counter3:inst4.clock
 clock => lpm_shiftreg1:inst9.clock

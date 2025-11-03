@@ -92,6 +92,16 @@ SIGNAL("habdir")
 	PARENT = "";
 }
 
+SIGNAL("pin_name1")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("sda")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -138,9 +148,9 @@ TRANSITION_LIST("clock")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 40;
-			LEVEL 0 FOR 12.5;
-			LEVEL 1 FOR 12.5;
+			REPEAT = 20;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
 		}
 	}
 }
@@ -181,14 +191,23 @@ TRANSITION_LIST("habdir")
 	}
 }
 
+TRANSITION_LIST("pin_name1")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 950.0;
+	}
+}
+
 TRANSITION_LIST("sda")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 90.0;
-		LEVEL 0 FOR 900.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 950.0;
 	}
 }
 
@@ -266,7 +285,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sda";
+	CHANNEL = "pin_name1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -275,7 +294,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "sdaaa";
+	CHANNEL = "sda";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -284,10 +303,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "soooy";
+	CHANNEL = "sdaaa";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "soooy";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 9;
 	TREE_LEVEL = 0;
 }
 
